@@ -1,1 +1,16 @@
-Projet-Web : Ynov
+Projet-Dev : Ynov 
+
+MISE EN PLACE DE VOTRE SITE WEB/CV 
+
+Type : Projet 
+Formation : Ynov informatique 
+Promotion : Bachelor 1
+UF : Technologies web & Base de données
+
+Groupe 05 
+Membres du groupe :
+Membre 1 : Jérémy RICHARD
+Membre 2 : David DA SILVA TEIXEIRA
+Membre 3 : Thomas RUIZ
+
+Contenu du rendu intermédiaire N°1 :

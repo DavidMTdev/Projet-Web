@@ -1,0 +1,304 @@
+.principale {
+	margin-left: 10%;
+	margin-bottom: 5%;
+	margin-top: 80px;
+	height: 100%;
+	width: 80%;
+	background: white;
+}
+
+/*PARTIE EXPERIENCE*/
+.titreexp {
+	height: 100px;
+	width: 100%;
+	background: #1a2342;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.titreexp h1 {
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+
+.experiencespro {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	border: solid black 1px;
+	text-align: center;
+}
+
+.exp1 {
+	border: solid black 1px;
+	margin: 10% 8%;
+	background-color: #0069d1;
+	border-radius: 20px;
+}
+
+.exp2 {
+	border: solid black 1px;
+	margin: 10% 8%;
+	background-color: #0069d1;
+	border-radius: 20px;
+}
+
+.exp3 {
+	border: solid black 1px;
+	margin: 10% 8%;
+	background-color: #0069d1;
+	border-radius: 20px;
+}
+
+.centerimgexp1 {
+	display: flex;
+	justify-content: center;
+}
+
+.centerimgexp2 {
+	display: flex;
+	justify-content: center;
+}
+
+.centerimgexp3 {
+	display: flex;
+	justify-content: center;
+}
+
+.imgexp1 {
+	height: 100%;
+	width: 200px;
+	border-radius: 20px;
+	/* border-radius: 50%;
+    margin-left: 25%; */
+}
+
+.imgexp2 {
+	height: 100%;
+	width: 200px;
+	border-radius: 20px;
+	/* height: 100px;
+    width: 100px; */
+	/* border-radius: 50%;
+    margin-left: 25%; */
+}
+
+.imgexp3 {
+	height: 100%;
+	width: 200px;
+	border-radius: 20px;
+	/* height: 100px;
+    width: 100px; */
+	/* border-radius: 50%;
+    margin-left: 25%; */
+}
+
+/*PARTIE PARCOURS*/
+.titreparcours {
+	height: 100px;
+	width: 100%;
+	background: #1a2342;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.titreparcours h1 {
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+
+.parcours {
+	/* display: grid;
+    grid-template-columns: 20% 80%; */
+	background: white;
+	border: 1px solid black;
+}
+
+.parcours1 {
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+
+.parcours2 {
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+.parcours3 {
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+
+.parc1 {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	margin: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	border: solid black 1px;
+	text-align: center;
+}
+
+.parc2 {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	margin: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	border: solid black 1px;
+	text-align: center;
+}
+
+.parc3 {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	margin: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	border: solid black 1px;
+	text-align: center;
+}
+
+.imgparc {
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+	/* margin: 20px; */
+}
+
+/*PARTIE COMPETENCE*/
+.titrecompetence {
+	height: 100px;
+	width: 100%;
+	background: #1a2342;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.titrecompetence h1 {
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+
+.compétences {
+	font-family: 'Oswald', sans-serif;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	border: 1px black solid;
+}
+
+.center {
+	width: 95%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background: #333;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+}
+
+.compclés {
+	margin: 0;
+	padding: 0;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.skillbox {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid black;
+}
+.skillbox .comp {
+	color: black;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+	padding: 0;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.skillbox .comp:nth-child(2) {
+	float: right;
+	position: relative;
+	top: -25px;
+}
+
+.skill {
+	background: #262626;
+	padding: 4px;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.skill_level_html {
+	background: #f06527;
+	width: 100%;
+	height: 10px;
+}
+
+.skill_level_css {
+	background: #2b64ea;
+	width: 100%;
+	height: 10px;
+}
+.skill_level_c {
+	background: #278f52;
+	width: 100%;
+	height: 10px;
+}
+.skill_level_python {
+	background: #ffd13e;
+	width: 100%;
+	height: 10px;
+}
+
+.skill_level_ccna {
+	background: #bbdefb;
+	width: 100%;
+	height: 10px;
+}
+
+.skill_level_server {
+	background: #2196f3;
+	width: 100%;
+	height: 10px;
+}
+
+/*PARTIE COMPETENCES LINGUISTIQUES*/
+.compétenceslangue {
+	font-family: 'Oswald', sans-serif;
+	border: 1px black solid;
+}
+
+.skill_level_fr {
+	background: #ff3d00;
+	width: 100%;
+	height: 10px;
+}
+
+.skill_level_en {
+	background: #3f51b5;
+	width: 100%;
+	height: 10px;
+}
+
+.skill_level_es {
+	background: #ffc107;
+	width: 100%;
+	height: 10px;
+}
+
+.skill_level_port {
+	background: #006600;
+	width: 100%;
+	height: 10px;
+}

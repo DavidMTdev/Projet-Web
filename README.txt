@@ -14,3 +14,12 @@ Membre 2 : David DA SILVA TEIXEIRA
 Membre 3 : Thomas RUIZ
 
 Contenu du rendu intermédiaire N°1 :
+
+- Page d'accueil 
+- Page de choix du CV
+- Page de présentation simple 
+- Page de présentation détaillée 
+- Page d'administration 
+- Documents (Présentation de l'équipe, compte rendu de chaque membre pour le rendu et le planning(gantt))
+
+

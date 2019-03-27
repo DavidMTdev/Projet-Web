@@ -1,5 +1,9 @@
+body{
+    display: flex;
+    justify-content: center;
+}
 .principale{
-    margin-left: 15%;
+    /* margin-left: 10%; */
     margin-bottom: 5%;
     margin-top: 80px;
     height: 100%;
@@ -59,8 +63,14 @@
     font-family: 'Oswald', sans-serif;
     padding-left: 10px;
     border: solid black 1px;
+    box-sizing: border-box;
 
 }
+
+.contact h1{
+    margin: 2%;
+}
+
 .elementscontact{
     display: flex;
     flex-direction: column;
@@ -203,4 +213,39 @@ i{
 
 .bouton:hover::before{
     height: 380%;
+}
+
+
+@media screen and (max-width:1024px){
+    .infos{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .principale{
+        margin-left: 60px;
+        margin-bottom: 5%;
+        margin-top: 80px;
+        height: 100%;
+        width: 80%;
+        border: solid black 1px;
+    }
+
+    .elementscontact{
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* text-align: center; */
+        text-align: justify;
+        font-size: 1.1em;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .infosbase{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    
+    }
 }

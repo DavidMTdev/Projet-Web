@@ -10,59 +10,39 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="assets/js/navbar.js" async></script>
 </head>
-<body>
+<body onload="menu()">
     <header>
-        <nav class="navbar-h">
-            <div class="left">
-                <img src="assets/img/icons8_Menu_40px.png" alt="">
-            </div>
-            <ul>
-                <li><a href="Accueil.html">Accueil</a></li>
-                <li><a href="choix.html">Gestion CV</a></li>
-            </ul>
-            <div class="right">
-                <img src="assets/img/icons8_Male_User_40px.png" alt="">
-            </div>
-        </nav>
         <nav class="navbar-v">
-            <div class="adminPanel">
-                APL
-            </div>
-            <div class="bar-v">
-                <div class="username">
-                    <img src="assets/icon/icons8_Account.ico" alt="">
-                    <div class="name">
-                    <p class="fisrtname">David</p>
-                    <p class="lastname">Teixeira</p>
-                    </div>
+            <div class="bar-menu">
+                <div class="menuBurger ">
+                    <img src="assets/img/icons8_Menu_40px.png" alt="">       
                 </div>
+                <div class="menuDelete visible">
+                    <img src="assets/icon/icons8_Delete_1.ico" alt="">
+                </div>
+            </div>
+            
+            <div class="bar-v">
                 <ul>
-                
+                    <li>
+                        <a href="Accueil.html">
+                            <img src="assets/icon/icons8-accueil-48.png" alt="">
+                            Accueil</a>
+                    </li>
+                    <li>
+                        <a href="choix.html">
+                            <img src="assets/icon/icons8-boîte-48 (1).png" alt="">
+                            Gestion CV</a>
+                    </li>
                     <li>
                         <a href="admin.html">
-                        <img src="assets/icon/icons8_Edit_3.ico" alt="">    
+                        <img src="assets/icon/icons8-editer-le-fichier-48.png" alt="">    
                             Modification
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                        <img src="assets/icon/icons8_Trash_2.ico" alt="">    
-                            Supprimer
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                        <img src="assets/icon/icons8_Info_1.ico" alt="">    
-                            Info
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                        <img src="assets/icon/icons8_Settings_2.ico" alt="">    
-                            Paramètre
-                        </a>
-                    </li>
+                
                 </ul>
             </div>
         </nav>

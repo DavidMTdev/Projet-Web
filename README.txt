@@ -23,3 +23,8 @@ Contenu du rendu intermédiaire N°1 :
 - Documents (Présentation de l'équipe, compte rendu de chaque membre pour le rendu et le planning(gantt))
 
 
+Contenu du rendu intermédiaire N°2:
+
+-Ensemble des pages web (améliorée et passée en responsive)
+-Documents (Compte rendu de chaque membre de membre pour le rendu intermédiaire N°2)
+

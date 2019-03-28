@@ -1,10 +1,14 @@
 .principale {
-	margin-left: 10%;
 	margin-bottom: 5%;
-	margin-top: 80px;
+	margin-top: 20px;
 	height: 100%;
 	width: 80%;
 	background: white;
+}
+
+main{
+	display: flex;
+	justify-content: center;
 }
 
 /*PARTIE EXPERIENCE*/
@@ -21,77 +25,102 @@
 	margin: 0;
 	text-align: center;
 	color: white;
+	font-family:'Oswald', sans-serif;
 }
 
 .experiencespro {
-	display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%;
+	/* display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
 	border: solid black 1px;
 	text-align: center;
 }
 
 .exp1 {
 	border: solid black 1px;
-	margin: 10% 8%;
+	margin: 5% 2%;
 	background-color: #0069d1;
 	border-radius: 20px;
+	width: 260px;
+	font-family:'Oswald', sans-serif;
+}
+
+.exp1 h1{
+	margin: 15px;
+	font-family:'Oswald', sans-serif;
+}
+
+.exp2 h1{
+	margin: 15px;
+	font-family:'Oswald', sans-serif;
+}
+
+.exp3 h1{
+	margin: 15px;
+	font-family:'Oswald', sans-serif;
 }
 
 .exp2 {
 	border: solid black 1px;
-	margin: 10% 8%;
+	margin: 5% 2%;
 	background-color: #0069d1;
 	border-radius: 20px;
+	width: 260px;
+	font-family:'Oswald', sans-serif;
 }
 
 .exp3 {
 	border: solid black 1px;
-	margin: 10% 8%;
+	margin: 5% 2%;
 	background-color: #0069d1;
 	border-radius: 20px;
+	width: 260px;
+	font-family:'Oswald', sans-serif;
 }
 
+.poste,.entreprise,.begindate,.enddate,.fonction{
+	margin-bottom: 15px;
+}
+
+
 .centerimgexp1 {
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
+	margin: 20px 0;
 }
 
 .centerimgexp2 {
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
+	margin: 20px 0;
+	height: 200px;
 }
 
 .centerimgexp3 {
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
+	margin: 20px 0;
 }
 
 .imgexp1 {
 	height: 100%;
 	width: 200px;
 	border-radius: 20px;
-	/* border-radius: 50%;
-    margin-left: 25%; */
 }
 
 .imgexp2 {
 	height: 100%;
 	width: 200px;
 	border-radius: 20px;
-	/* height: 100px;
-    width: 100px; */
-	/* border-radius: 50%;
-    margin-left: 25%; */
 }
 
 .imgexp3 {
 	height: 100%;
 	width: 200px;
 	border-radius: 20px;
-	/* height: 100px;
-    width: 100px; */
-	/* border-radius: 50%;
-    margin-left: 25%; */
 }
 
 /*PARTIE PARCOURS*/
@@ -109,6 +138,7 @@
 	margin: 0;
 	text-align: center;
 	color: white;
+	font-family:'Oswald', sans-serif;
 }
 
 .parcours {
@@ -141,6 +171,7 @@
 	border-radius: 20px;
 	border: solid black 1px;
 	text-align: center;
+	font-family:'Oswald', sans-serif;
 }
 
 .parc2 {
@@ -151,6 +182,7 @@
 	border-radius: 20px;
 	border: solid black 1px;
 	text-align: center;
+	font-family:'Oswald', sans-serif;
 }
 
 .parc3 {
@@ -161,6 +193,7 @@
 	border-radius: 20px;
 	border: solid black 1px;
 	text-align: center;
+	font-family:'Oswald', sans-serif;
 }
 
 .imgparc {
@@ -185,6 +218,7 @@
 	margin: 0;
 	text-align: center;
 	color: white;
+	font-family:'Oswald', sans-serif;
 }
 
 .compétences {
@@ -192,6 +226,7 @@
 	display: grid;
 	grid-template-columns: 50% 50%;
 	border: 1px black solid;
+	width: 100%;
 }
 
 .center {
@@ -277,6 +312,7 @@
 .compétenceslangue {
 	font-family: 'Oswald', sans-serif;
 	border: 1px black solid;
+	width: 100%;
 }
 
 .skill_level_fr {

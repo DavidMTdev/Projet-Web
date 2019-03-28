@@ -14,7 +14,7 @@ body{
 
 .infosbase{
     display: grid;
-    grid-template-columns: 23% 77%;
+    grid-template-columns: 20% 80%;
 
 }
 .namestude{
@@ -51,7 +51,7 @@ body{
 
 .infos{
     display: grid;
-    grid-template-columns: 23% 77%; 
+    grid-template-columns: 20% 80%; 
     border: 1px solid black; 
 }
 
@@ -216,7 +216,7 @@ i{
 }
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1150px){
     .infos{
         display: inline-block;
         width: 100%;
@@ -233,9 +233,6 @@ i{
 
     .elementscontact{
         display: flex;
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* text-align: center; */
         text-align: justify;
         font-size: 1.1em;
     }

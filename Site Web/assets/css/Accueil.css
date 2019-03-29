@@ -4,10 +4,6 @@
 	background: #000000;
 }
 
-body,html {
-	width: 100%;
-	height: 100%;
-}
 main {
 	font-family: sans-serif;
 	height: 100%;
@@ -21,12 +17,17 @@ p {
 .welcome {
 	height: 100%;
 	width: 100%;
+	z-index: -1;
 }
 
 .background {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
+	background:url("../img/startup-593327_1920.jpg");
+	height: 100%;
+	width: 100%;
 }
 
 .welcome h1 {
@@ -46,11 +47,9 @@ p {
 
 	/* Code couleur Bleu */
 	background: linear-gradient(45deg, #009efa, #00d2fc, #4ffbdf);
-	margin-left: 60px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	text-align: center;
 	padding: 60px 0px;
-	height: auto;
 	/* margin-left: 58px; */
 	font-family: sans-serif;
 	width: 100%;
@@ -122,6 +121,8 @@ p {
 	position: absolute;
 	top: 0;
 	left: 0;
+	margin-left: 60px;
+	z-index: -1;
 }
 
 @media screen and (max-width: 600px) {

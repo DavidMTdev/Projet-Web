@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-body {
+body{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -25,9 +25,9 @@ header nav.navbar-v {
 	overflow: hidden;
 }
 
-header nav.navbar-v div.bar-v {
+/* header nav.navbar-v div.bar-v {
 	height: 100%;
-}
+} */
 
 header nav.navbar-v ul {
 	display: block;

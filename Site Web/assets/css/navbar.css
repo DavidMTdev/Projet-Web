@@ -25,10 +25,6 @@ header nav.navbar-v {
 	overflow: hidden;
 }
 
-/* header nav.navbar-v div.bar-v {
-	height: 100%;
-} */
-
 header nav.navbar-v ul {
 	display: block;
 	margin-top: 20px;

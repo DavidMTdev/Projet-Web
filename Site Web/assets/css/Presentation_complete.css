@@ -29,8 +29,6 @@ main{
 }
 
 .experiencespro {
-	/* display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -87,21 +85,15 @@ main{
 
 
 .centerimgexp1 {
-	/* display: flex;
-	justify-content: center; */
 	margin: 20px 0;
 }
 
 .centerimgexp2 {
-	/* display: flex;
-	justify-content: center; */
 	margin: 20px 0;
 	height: 200px;
 }
 
 .centerimgexp3 {
-	/* display: flex;
-	justify-content: center; */
 	margin: 20px 0;
 }
 
@@ -200,7 +192,6 @@ main{
 	height: 100%;
 	width: 100%;
 	border-radius: 20px;
-	/* margin: 20px; */
 }
 
 /*PARTIE COMPETENCE*/
@@ -337,4 +328,12 @@ main{
 	background: #006600;
 	width: 100%;
 	height: 10px;
+}
+
+@media screen and (max-width: 650px){
+	.compétences{
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	
 }

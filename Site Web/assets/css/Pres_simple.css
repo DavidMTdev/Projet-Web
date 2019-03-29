@@ -3,24 +3,25 @@ body{
     justify-content: center;
 }
 
-body,html {
-	height: 100%;
-	width: 100%;
+main{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+
 }
 .principale{
-    margin-bottom: 5%;
-    margin-top: 80px;
-    height: 100%;
+    margin-top: 40px;
     width: 80%;
+    margin-bottom: 5%;
     
 }
 
 .infosbase{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 22% 78%;
     border: 1px solid black;
-
 }
+
 .namestude{
     display: flex;
     flex-direction: column;
@@ -53,7 +54,7 @@ body,html {
 
 .infos{
     display: grid;
-    grid-template-columns: 20% 80%; 
+    grid-template-columns: 22% 78%; 
     border: 1px solid black; 
 }
 
@@ -162,50 +163,50 @@ i{
 
 /*BOUTON EN SAVOIR PLUS*/
 .centre{
-   float: right;
-    position: relative;
-    width:200px;
-}
-
-.bouton{
-    position: relative;
-    display: block;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-family: sans-serif;
-    text-decoration: none;
-    margin: 30px 0;
-    border: 2px solid #2980b9;
-    padding: 14px 30px;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 1s all ease;
-    font-weight: bold;
-}
-
-.bouton::before{
-    background: #3498db;
-    /* content:""; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    transition: all 0.6s ease;
-}
-
-.bouton1::before{
-    text-align: center;
-    width: 100%;
-    height: 0;
-    color: white;
-    transform: translate(-50%,-50%) rotate(-45deg);
-}
-
-.bouton:hover::before{
-    height: 380%;
-}
+    float: right;
+     position: relative;
+     width:200px;
+ }
+ 
+ .bouton{
+     position: relative;
+     display: block;
+     color: rgb(0, 0, 0);
+     font-size: 14px;
+     font-family: sans-serif;
+     text-decoration: none;
+     margin: 30px 0;
+     border: 2px solid #2980b9;
+     padding: 14px 30px;
+     text-transform: uppercase;
+     overflow: hidden;
+     transition: 1s all ease;
+     font-weight: bold;
+ }
+ 
+ .bouton::before{
+     background: #3498db;
+     content:"";
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     color: white;
+     transform: translate(-50%,-50%);
+     z-index: -1;
+     transition: all 0.6s ease;
+ }
+ 
+ .bouton1::before{
+     text-align: center;
+     width: 100%;
+     height: 0;
+     color: white;
+     transform: translate(-50%,-50%) rotate(-45deg);
+ }
+ 
+ .bouton:hover::before{
+     height: 380%;
+ }
 
 
 @media screen and (max-width:1150px){

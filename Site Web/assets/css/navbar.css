@@ -19,7 +19,7 @@ header nav.navbar-v {
 	left: 0;
 	width: 250px;
 	height: 100%;
-	background-color: #154781e3;
+	background-color: #154781;
 	color: #fff;
 	z-index: 1;
 	overflow: hidden;
@@ -90,7 +90,7 @@ header nav.navbar-v ul li a {
 }
 
 .navbar-v a:hover {
-	background: #0e498d;
+	background: #125cb1;
 }
 
 .menuBurger:hover,

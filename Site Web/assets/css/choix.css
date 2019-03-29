@@ -46,6 +46,7 @@ a {
 	margin: 10px;
 	color: black;
 	font-weight: bold;
+	cursor: pointer;
 }
 .pagechoix {
 	height: 100%;

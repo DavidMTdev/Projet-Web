@@ -9,6 +9,8 @@ body{
 
 main {
 	margin-left: 60px;
+	height: 100%;
+	width: 100%;
 }
 
 header{
@@ -21,7 +23,6 @@ header{
 /********** navbar vertical *************/
 
 header nav.navbar-v {
-	
 	width: 250px;
 	height: 100%;
 	background-color: #154781;

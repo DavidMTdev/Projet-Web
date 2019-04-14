@@ -1,0 +1,164 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+}
+
+body{
+    display: flex;
+}
+
+.b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url(../img/startup-593327_1920.jpg) no-repeat 50% 50% ;
+    background-size: cover;
+    /* opacity: 0.9; */
+}
+
+.b1 .in1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+}
+
+.content{
+    max-width: 500px;
+    text-align: center;
+}
+
+.content h1{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 4em;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    margin: 20px;
+}
+
+.content h5{
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.content .btn{
+    border-radius: 9px;
+    color: #2195f3;
+    text-decoration: none;
+    font-family: 'Century Gothic',sans-serif;
+    border: 3px solid;
+    padding: 7px 13px;
+    font-weight: bold;
+    box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+}
+
+.content .btn:hover{
+    color: white;
+    background: #2195f3
+    
+}
+
+p{
+    text-align: justify;
+    margin: 3% 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+.team{
+    padding: 50px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border{
+    width: 160px;
+    height: 5px;
+    background: #36aeff;
+    margin: 26px auto;
+}
+
+.members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.member{
+    flex: 32%;
+    box-sizing: border-box;
+    padding: 15px;
+    background:white;
+    margin: 0 10px 10px 0;
+    
+}
+
+.equipier{
+    /* background:white; */
+    padding: 30px;
+    height: 100%;
+}
+
+.equipier img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.equipier p{
+    text-align: justify;
+    font-family: 'Rubik', sans-serif;
+}
+
+.name{
+    font-size:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.role{
+    font-weight: bold;
+}
+
+@media screen and (max-width:680px){
+    .member{
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .member{
+        flex: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+

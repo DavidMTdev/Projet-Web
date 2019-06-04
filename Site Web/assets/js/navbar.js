@@ -31,5 +31,4 @@ function menu() {
 		actionDelete();
 		result = 0;
 	}
-	console.log(result);
 }

@@ -5,13 +5,14 @@
 }
 
 main {
-	display: grid;
-	grid-template-columns: 30% 70%;
+	/* display: grid;
+	grid-template-columns: 30% 70%; */
 	width: 100%;
 	height: 100%;
 	position: relative;
+	z-index: -1;
 }
-.modif {
+/* .modif {
 	overflow-y: scroll;
 	color: #fff;
 }
@@ -33,11 +34,12 @@ main {
 	text-align: center;
 	background: #2980b9;
 	padding: 10px 0;
-}
+} */
 
 .cv {
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	color: #000;
+	width: 100%;
 }
 
 .menu {

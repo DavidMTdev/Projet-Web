@@ -25,6 +25,12 @@ Contenu du rendu intermédiaire N°1 :
 
 Contenu du rendu intermédiaire N°2:
 
--Ensemble des pages web (améliorée et passée en responsive)
+-Ensemble des pages web (améliorées et passées en responsive)
 -Documents (Compte rendu de chaque membre pour le rendu intermédiaire N°2)
 
+
+Contenu du rendu intermédiaire N°3:
+
+-Ensemble des pages web (améliorées)
+-Documents (Compte rendu de chaque membre pour le rendu intermédiaire N°3)
+-Modélisation de la base de données (MCD & MLD)

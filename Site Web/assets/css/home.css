@@ -1,0 +1,228 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	width: 100%;
+	height: auto;
+}
+
+/* section header */
+
+.main-header {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/programmeur.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.main-header .title {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: 50%;
+}
+
+.main-header .title h1 {
+	text-align: center;
+	font-size: 4.3em;
+}
+
+.main-header .info {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	height: 40vh;
+}
+
+.main-header .info p {
+	margin-top: 30px;
+	font-size: 1.5em;
+}
+
+.main-header .img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+}
+
+.main-header .img a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	border: 2px #000 solid;
+	border-radius: 50%;
+	color: #000;
+}
+
+/* section info */
+
+.main-info {
+	width: 100%;
+	height: 100vh;
+	background: #535353;
+}
+
+.grid {
+	display: grid;
+	width: 100%;
+	height: 50%;
+}
+
+.grid.column-1 {
+	grid-template-columns: 100%;
+	grid-template-rows: 100%;
+}
+
+.grid.column-2 {
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 90vh;
+}
+
+.grid.column-3 {
+	grid-template-columns: repeat(3, calc(100% / 3));
+	grid-template-rows: 100%;
+}
+
+.main-info a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.main-info a .icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.icon img {
+	width: 40px;
+	height: 40px;
+	color: #fff;
+}
+
+.main-info a h2 {
+	text-align: center;
+	text-transform: capitalize;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.company {
+	background-image: url("../img/Register-Cleaning-Company-in-Singapore.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.company a {
+	background-color: #3a0000cb;
+}
+
+.project {
+	background-image: url("../img/19412.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.project a {
+	background-color: #000a3acb;
+}
+
+.article {
+	background-image: url("../img/devenir-redacteur-web.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.article a {
+	background-color: #003a09cb;
+}
+
+/* section contact */
+
+/* info-contact */
+.main-contact {
+	width: 100%;
+	height: 90vh;
+	background: #535353;
+}
+
+.info-contact {
+	display: flex;
+	align-items: center;
+}
+
+.info-contact h3 {
+	text-transform: capitalize;
+	color: #e92323;
+	margin-bottom: 5px;
+}
+
+.div-center {
+	width: 100%;
+	margin-left: 25%;
+}
+
+.div-center > div {
+	margin: 30px 0;
+}
+
+.div-center div > div {
+	display: inline-block;
+}
+
+.div-center .icon {
+	margin-right: 20px;
+}
+
+.info-contact a,
+.info-contact p {
+	margin-left: 50px;
+	color: #fff;
+}
+/* mail-contact */
+.mail-contact {
+}
+
+/* footer */
+
+footer {
+	width: 100%;
+	height: 10vh;
+	background: #333333;
+}
+
+.flex {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.flex.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright p {
+	font-size: 12px;
+	color: #535353;
+}

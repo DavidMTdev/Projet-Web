@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #dfe4ea;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.border-principal{
+    width: 300px;
+    height: 5px;
+    background: #1B9CFC;
+    margin: 15px auto;
+}
+
+.border{
+    width: 160px;
+    height: 5px;
+    background: #1B9CFC;
+    margin: 15px auto;
+}
+
+.project-presentation{
+    display:flex;
+    padding: 15px 100px;
+    background:#d3d9e0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.supplement-image img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+.supplement-principal{
+    /* padding: 0 50px; */
+    color: black;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.supplement-title h1{
+    padding: 10px 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.project-description h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.project-description,.technology-used-project,.supplement-type{
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-description img{
+    padding: 0 7px;
+}
+
+.project-description li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.description,.quantity,.technology-used,.benefaction,.type{
+    width: 80%;
+    /* border: 0.2px solid black; */
+    background:#d3d9e0;
+    padding: 20px;
+    box-shadow: 0 6px 4px rgba(0,0,0,.5);
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.technology-used-project li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.technology-used-project h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.technology-used-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.technology-used-logo img{
+    height: 100px;
+    width: 100px;
+    padding: 0 20px;
+}
+#css-img{
+    width: 70px;
+    height: 100px;
+}
+#php-img{
+    height: 70px;
+    width: 100px;
+}
+
+
+.supplement-type li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* .supplement-type img{
+    padding: 0 7px;
+} */
+
+.supplement-type h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.project-screenshot-container{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+}
+
+.project-screenshot-container img{
+    height: 200px;
+    width: 90%;
+    margin: 10px 0;
+}
+
+
+
+
+
+@media screen and (max-width:700px){
+    .project-presentation{
+        padding: 30px 20px;
+    }
+    .border-principal{
+        width: 100px;
+        height: 5px;
+        background: #1ed760;
+        margin: 15px auto;
+    }
+
+    .supplement-principal{
+        padding: 0;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        width: 100%;
+    }
+
+    .supplement-image img{
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+    }
+
+    .supplement-title h1{
+        padding: 10px 0;
+        font-size: 30px;
+    }
+
+}

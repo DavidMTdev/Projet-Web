@@ -6,7 +6,7 @@
 	background: white;
 }
 
-main{
+main {
 	display: flex;
 	justify-content: center;
 }
@@ -25,7 +25,7 @@ main{
 	margin: 0;
 	text-align: center;
 	color: white;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .experiencespro {
@@ -43,22 +43,22 @@ main{
 	background-color: #0069d1;
 	border-radius: 20px;
 	width: 260px;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
-.exp1 h1{
+.exp1 h1 {
 	margin: 15px;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
-.exp2 h1{
+.exp2 h1 {
 	margin: 15px;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
-.exp3 h1{
+.exp3 h1 {
 	margin: 15px;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .exp2 {
@@ -67,7 +67,7 @@ main{
 	background-color: #0069d1;
 	border-radius: 20px;
 	width: 260px;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .exp3 {
@@ -76,13 +76,16 @@ main{
 	background-color: #0069d1;
 	border-radius: 20px;
 	width: 260px;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
-.poste,.entreprise,.begindate,.enddate,.fonction{
+.poste,
+.entreprise,
+.begindate,
+.enddate,
+.fonction {
 	margin-bottom: 15px;
 }
-
 
 .centerimgexp1 {
 	margin: 20px 0;
@@ -130,7 +133,7 @@ main{
 	margin: 0;
 	text-align: center;
 	color: white;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .parcours {
@@ -163,7 +166,7 @@ main{
 	border-radius: 20px;
 	border: solid black 1px;
 	text-align: center;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .parc2 {
@@ -174,7 +177,7 @@ main{
 	border-radius: 20px;
 	border: solid black 1px;
 	text-align: center;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .parc3 {
@@ -185,7 +188,7 @@ main{
 	border-radius: 20px;
 	border: solid black 1px;
 	text-align: center;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .imgparc {
@@ -209,7 +212,7 @@ main{
 	margin: 0;
 	text-align: center;
 	color: white;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .compétences {
@@ -330,10 +333,9 @@ main{
 	height: 10px;
 }
 
-@media screen and (max-width: 650px){
-	.compétences{
+@media screen and (max-width: 650px) {
+	.compétences {
 		display: grid;
 		grid-template-columns: 100%;
 	}
-	
 }

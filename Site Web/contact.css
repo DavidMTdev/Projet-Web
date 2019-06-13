@@ -10,8 +10,8 @@
   }
   
   .nav-header{
-      height: 60px;
-      background :#aab3c0;
+      height: 70px;
+      background :#B9B9B9;
       display: flex;
       align-items: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -39,7 +39,7 @@
   
   .nav-menu{
       float:right;
-      line-height: 60px;
+      line-height: 70px;
       display: flex;
       list-style:none;
       justify-content: center;
@@ -50,7 +50,7 @@
   
   .nav-login{
       float:right;
-      line-height: 60px;
+      line-height: 70px;
       list-style:none;
       text-transform: uppercase;
   }
@@ -73,13 +73,13 @@
   
   
   li a:hover {
-      background-color: #b7c1ce;
+      background-color: #C9C9C9;
       color: white;
    }
   
-  /* main{
+  main{
       padding-top:69px;
-  } */
+  }
   
   .menu-burger{
       display: none;

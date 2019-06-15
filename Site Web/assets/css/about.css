@@ -6,6 +6,11 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+.display-flex-center{
+	display: flex;
+	justify-content: center;
+}
+
 body {
 	background: #dfe4ea;
 }
@@ -62,9 +67,7 @@ main {
 	color: black;
 	text-align: center;
 	width: 100%;
-	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
 .supplement-title h1 {
@@ -85,8 +88,6 @@ main {
 .about-full-info {
 	padding: 20px 0;
 	width: 100%;
-	display: flex;
-	justify-content: center;
 	background: #dfe4ea;
 } 
 
@@ -123,20 +124,12 @@ main {
 
 .image-pro {
 	width: 100%;
-	display: flex;
-	justify-content: center;
 	align-items: center;
 }
 
 .image-pro img {
 	height: 180px;
 	border-radius: 20px;
-}
-
-.info-pro {
-	display: flex;
-	justify-content: center;
-	/* align-items: center */
 }
 
 .info-pro h3{
@@ -172,39 +165,28 @@ main {
 	height: auto;
 }
 
-.presentation-pro {
-	/* background: #787878; */
-	/* height: 40px; */
-}
-
 .school-career {
-	/* background: #a43131; */
 	right: 0;
 }
 
 .experience-pro {
 	left: 0;
-	/* background: #cb6060; */
 }
 
 .technical-skill {
 	left: 0;
-	/* background: #234893; */
 }
 
 .language-skill {
 	right: 0;
-	/* background: #648cdd; */
 }
 
 .leisure {
 	right: 0;
-	/* background: #199b33; */
 }
 
 .download {
 	left: 0;
-	/* background: #92b514; */
 }
 
 .skillbox {
@@ -263,4 +245,74 @@ li:after {
 	top: 2px;
 	height: 15px;
 	width: 15px;
+}
+
+@media screen and (max-width:800px){
+	.container {
+		width: 90%;
+		box-shadow: 0 6px 4px #40404080;
+		border-radius: 8px;
+	}
+
+	.name-surname{
+		display: flex;
+		justify-content: center;
+	}
+	.info-pro{
+		margin: 10px 0;
+	}
+	.info-pro h3{
+		font-size: 2em;
+	}
+	.info-pro h4{
+		font-size: 1.2em;
+	}
+
+	.image-pro {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px 0;
+	}
+
+	.full-info {
+		display: block;
+		background: #d3d9e0;
+	}
+
+	.about-full-info .container > div {
+		position: static;
+		width: 90%;
+		padding: 20px 0 20px 20px;
+		height: auto;
+	}
+
+	.container.presentation-principal{
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	.supplement-principal {
+		color: black;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.supplement-title h1 {
+		padding: 10px 0;
+		font-size: 1.5em;
+		text-transform: uppercase;
+	}
+
+	.presentation-principal {
+		height: auto;
+		background: #d3d9e0;
+	}
+
+	
 }

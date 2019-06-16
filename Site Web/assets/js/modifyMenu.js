@@ -1,5 +1,6 @@
-const jsButton = document.querySelector('main button'); //! modifier pour mettre l'élément parent
-jsButton.addEventListener('click', showWindowMenu);
+const jsPresentation = document.querySelector('.js-presentation'); //! modifier pour mettre l'élément parent
+jsPresentation.addEventListener('click', showWindowMenu);
+console.log(jsPresentation);
 
 function showWindowMenu() {
 	//* création de la fenettre de menu

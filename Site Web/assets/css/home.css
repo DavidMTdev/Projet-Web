@@ -124,15 +124,15 @@ main {
 	margin-bottom: 20px;
 }
 
-.about{
+.about {
 	background-image: url("http://backgrounddirect.com/portals/0/Images/slider3.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.about a{
-	background-color: hsla(32, 100%, 50%, 0.500)
+.about a {
+	background-color: hsla(32, 100%, 50%, 0.500);
 }
 
 .company {
@@ -157,8 +157,6 @@ main {
 	background-color: hsla(230, 100%, 11%, 0.600);
 }
 
-
-
 .article {
 	background-image: url("../img/devenir-redacteur-web.jpeg");
 	background-size: cover;
@@ -179,47 +177,47 @@ main {
 	background: #dfe4ea;
 }
 
-.contact-title h3{
+.contact-title h3 {
 	text-align: center;
 	/* margin: 20px 0; */
 	font-size: 2em;
 	font-weight: bold;
 }
 
-.border{
-    width: 160px;
-    height: 5px;
-    background: #36aeff;
-    margin: 26px auto;
+.border {
+	width: 160px;
+	height: 5px;
+	background: #36aeff;
+	margin: 26px auto;
 }
 
-.contact-title h4{
+.contact-title h4 {
 	font-size: 1.2em;
 	font-weight: bold;
 }
 
-.contact-title p{
+.contact-title p {
 	margin: 15px 0;
 }
 
-.mail-contact{
+.mail-contact {
 	padding: 50px 20px;
 }
 
-.mail-header{
+.mail-header {
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
 
-.mail-header input{
-	margin: 20px 20px 20px 0 ;
+.mail-header input {
+	margin: 20px 20px 20px 0;
 	height: 30px;
 	background: none;
 	border: 0;
 	border-bottom: 1px solid rgb(131, 131, 131);
 }
 
-.mail-text textarea{
+.mail-text textarea {
 	max-width: 95%;
 	min-width: 95%;
 	max-height: 90px;
@@ -229,27 +227,27 @@ main {
 	border: 1px solid rgb(131, 131, 131);
 }
 
-.submit-button-container{
-    display: flex;
+.submit-button-container {
+	display: flex;
 	justify-content: flex-end;
 	padding: 20px;
 }
 
-.submit-button-container input{
-    border: 0;
-    background: none;
-    text-align: center;
-    border: 2px solid #057EFF;
-    padding: 14px 40px;
-    outline: none;
-    color: black;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
+.submit-button-container input {
+	border: 0;
+	background: none;
+	text-align: center;
+	border: 2px solid #057eff;
+	padding: 14px 40px;
+	outline: none;
+	color: black;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
 }
-.submit-button-container input:hover{
-    background: #057EFF;
-    color: white;
+.submit-button-container input:hover {
+	background: #057eff;
+	color: white;
 }
 
 .info-contact {
@@ -259,7 +257,7 @@ main {
 
 .info-contact h3 {
 	text-transform: capitalize;
-	color: #1B9CFC;
+	color: #1b9cfc;
 	margin-bottom: 5px;
 }
 
@@ -285,31 +283,7 @@ main {
 	color: rgb(56, 56, 56);
 }
 
-/* footer */
-
-footer {
-	width: 100%;
-	height: 10vh;
-	background: #333333;
-}
-
-.flex {
-	display: flex;
-	width: 100%;
-	height: 100%;
-}
-
-.flex.center {
-	justify-content: center;
-	align-items: center;
-}
-
-.copyright p {
-	font-size: 12px;
-	color: #535353;
-}
-
-@media screen and (max-width:1030px){
+@media screen and (max-width: 1030px) {
 	.grid.column-2 {
 		grid-template-columns: 100%;
 	}
@@ -320,7 +294,7 @@ footer {
 		justify-content: center;
 	}
 
-	.div-center{
+	.div-center {
 		width: auto;
 		margin: 0%;
 	}

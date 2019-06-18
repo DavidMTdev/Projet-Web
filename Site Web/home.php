@@ -2,7 +2,7 @@
 
 <section id="header" class="main-header">
     <div class="title">
-        <h1><?= $user[0]['nom_uti'] . ' ' . $user[0]['prenom_uti'] ?></h1>
+        <h1><?= $user['NOM_UTI'] . ' ' . $user['PRENOM_UTI'] ?></h1>
     </div>
     <div class="info">
         <p>Je suis un étudiant en informatique</p>
@@ -14,7 +14,7 @@
 <section id="info" class="main-info">
     <div class="grid column-1">
         <div class="about">
-            <a href="#">
+            <a href=<?= "about.php?id=" . $_GET['id'] ?>>
                 <div class="item">
                     <div class="icon">
                         <img src="assets/icon/icons8-carte-contact-64.png">
@@ -38,7 +38,7 @@
             </a>
         </div>
         <div class="project">
-            <a href="#">
+            <a href=<?= "project.php?id=" . $_GET['id'] ?>>
                 <div class="item">
                     <div class="icon">
                         <img src="assets/icon/icons8-projet-96.png">
@@ -96,7 +96,7 @@
                     </div>
                     <div class="text">
                         <h3>adresse :</h3>
-                        <p>52 rue henri barbusse</p>
+                        <p><?= $user['ADRESSE_UTI'] ?></p>
                     </div>
                 </div>
 
@@ -106,7 +106,7 @@
                     </div>
                     <div class="text">
                         <h3>mail :</h3>
-                        <a href="mailto:david.teixeira31@gmail.com">david.teixeira31@gmail.com</a>
+                        <a href="mailto:david.teixeira31@gmail.com"><?= $user['MAIL_UTI'] ?></a>
                     </div>
                 </div>
 
@@ -116,7 +116,7 @@
                     </div>
                     <div class="text">
                         <h3>téléphone :</h3>
-                        <a href="tel:+33658736152">+33 06 58 73 61 52</a>
+                        <a href="tel:+33658736152">+33 <?= $user['TEL_UTI'] ?></a>
                     </div>
                 </div>
 
@@ -134,48 +134,5 @@
 
     </div>
 </section>
-<!-- <div class="js-blur">
-            <div class="js-window-menu">
-                <div class="js-tool-bar">
-                    <div class="js-tool-nav">
-                        <ul>
-                            <li>text</li>
-                            <li>text</li>
-                            <li>text</li>
-                        </ul>
-                    </div>
-                    <div class="js-tool-images">
-                        <div class="js-img-delete">
-                            <img src="assets/icon/icons8_Delete_1.ico" alt="delete.ico">
-                        </div>
-                        <div class="js-img-other">
-                            <img src="assets/icon/icons8_Expand_Arrow.ico" alt="delete.ico">
-                        </div>
-                    </div>
-                </div>
-                <div class="js-main-menu">
-                    <form action="" method="post">
 
-                        <div class="js-form-input">
-                            <div class="js-input">
-                                <input type="text" name="" id="" placeholder="Mon text ....">
-                            </div>
-                            <div class="js-input">
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="js-input">
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="js-input">
-                                <input type="file" name="" id="">
-                            </div>
-                        </div>
-                        <div class="js-form-submit">
-                            <button type="submit">Valider</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="js-bottom-line"></div>
-            </div>
-        </div> -->
 <?php require_once("include/footer.php") ?>

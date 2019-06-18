@@ -1,14 +1,14 @@
 <div class="nav-header">
-    <!-- <a href="home.php" class="nav-logo"><img src="images/logo.png" alt=""></a> -->
     <div class="nav">
         <ul class="nav-menu">
-            <li><a href="food-supplements.php">A propos</a></li>
-            <li><a href="profil.php">Entreprise</a></li>
-            <li><a href="home.php#premium">Projet</a></li>
-            <li><a href="profil.php">Article</a></li>
+            <li><a href=<?= "home.php?id=" . $_GET['id'] ?>>Accueil</a></li>
+            <li><a href=<?= "about.php?id=" . $_GET['id'] ?>>A propos</a></li>
+            <li><a href="">Entreprise</a></li>
+            <li><a href=<?= "project.php?id=" . $_GET['id'] ?>">Projet</a></li>
+            <li><a href="">Article</a></li>
         </ul>
         <ul class="nav-login">
-            <li><a href="login.php">Se connecter</a></li>
+            <li><a>Se connecter</a></li>
         </ul>
     </div>
     <div class="menu-burger">

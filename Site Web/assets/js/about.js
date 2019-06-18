@@ -1,11 +1,13 @@
 window.addEventListener('load', () => {
 	changePosition('.presentation-pro', '.experience-pro');
-	changePosition('.school-career', '.language-skill');
-	changePosition('.experience-pro', '.technical-skill');
-	changePosition('.technical-skill', '.download');
-	changePosition('.language-skill', '.leisure');
 
-	var element1 = document.querySelector('.download');
+	changePosition('.school-career', '.technical-skill');
+	changePosition('.experience-pro', '.language-skill');
+	changePosition('.technical-skill', '.leisure');
+	changePosition('.language-skill', '.contact');
+	// changePosition('.contact', '.download');
+
+	var element1 = document.querySelector('.leisure');
 	var element2 = document.querySelector('.full-info');
 
 	element2.style.height = element1.offsetHeight + element1.offsetTop + 'px';

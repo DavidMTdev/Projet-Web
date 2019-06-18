@@ -11,7 +11,7 @@ main {
 }
 
 .js-blur {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	background: #4e4e4e86;
@@ -22,7 +22,7 @@ main {
 }
 
 .js-window-menu {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	width: 55%;
@@ -75,20 +75,23 @@ main {
 
 .js-main-menu {
 	width: 100%;
-	height: calc(100% - 20px);
+	height: calc(100% - 70px);
 	overflow-y: scroll;
+	position: relative;
 }
 
 .js-form-input {
 	display: grid;
-	grid-auto-columns: 70%;
+	grid-auto-columns: 100%;
 	grid-auto-rows: 70px;
+	margin: 0 50px;
 }
 
 .js-input {
 	display: flex;
 	align-items: center;
-	margin-left: 100px;
+	justify-content: center;
+	/* margin-left: 100px; */
 }
 
 .js-input input {
@@ -100,8 +103,9 @@ main {
 
 .js-form-submit {
 	position: fixed;
-	bottom: 35px;
-	right: 45px;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .js-form-submit button {

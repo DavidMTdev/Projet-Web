@@ -4,7 +4,7 @@
             <li><a href=<?= "home.php?id=" . $_GET['id'] ?>>Accueil</a></li>
             <li><a href=<?= "about.php?id=" . $_GET['id'] ?>>A propos</a></li>
             <li><a href="">Entreprise</a></li>
-            <li><a href=<?= "project.php?id=" . $_GET['id'] ?>">Projet</a></li>
+            <li><a href=<?= "project.php?id=" . $_GET['id'] ?>>Projet</a></li>
             <li><a href="">Article</a></li>
         </ul>
         <ul class="nav-login">

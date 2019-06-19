@@ -44,7 +44,17 @@ if (isset($_GET['id'])) {
 
     $hobby = select("SELECT l.id_loisir, loisir FROM utilisateur u JOIN a  ON a.id_uti = u.id_uti JOIN loisirs l ON a.id_loisir = l.id_loisir WHERE u.id_uti = :id_uti", array("id_uti" => $_GET['id']));
 
-    // var_dump($schoolCareer);
+    $allProjetUser = select("SELECT p.id_projet, nom_projet, description_projet FROM utilisateur u JOIN participe pa ON pa.id_uti = u.id_uti JOIN projet p ON pa.id_projet = p.id_projet WHERE u.id_uti = :id_uti", array("id_uti" => $_GET['id']));
+
+
+    if (isset($_GET['projet'])) {
+        $projetUser = selectOne("SELECT p.id_projet, nom_projet, description_projet FROM utilisateur u JOIN participe pa ON pa.id_uti = u.id_uti JOIN projet p ON pa.id_projet = p.id_projet WHERE p.id_projet = :id_projet", array("id_projet" => $_GET['projet']));
+    }
+
+    // $projetImg = select("SELECT i.id_img, nom_img FROM img i JOIN detenir d ON d.id_img = i.id_img WHERE d.id_projet = :id_projet", array("id_projet" => $_GET['projet']));
+
+    // var_dump($projetUser);
+    // var_dump($projetImg);
 }
 
 

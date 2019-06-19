@@ -23,9 +23,13 @@
     <?php elseif ($_SERVER["SCRIPT_NAME"] === "/projet-web/site web/choice.php") : ?>
         <link rel="stylesheet" href="assets/css/choice.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <?php elseif ($_SERVER["SCRIPT_NAME"] === "/projet-web/site web/project.php") : ?>
+        <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/project.css">
+    <?php elseif ($_SERVER["SCRIPT_NAME"] === "/projet-web/site web/project-infos.php") : ?>
+        <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/project-infos.css">
     <?php endif; ?>
-
-
     <script src="https://kit.fontawesome.com/25659af8cc.js" async></script>
 </head>
 

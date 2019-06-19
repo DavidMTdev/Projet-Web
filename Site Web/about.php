@@ -16,9 +16,11 @@
                 <img src=<?= "upload/" . $_GET['id'] . "/" . $user['image_uti'] ?> alt="">
 
             </div>
-            <div class="js-edit-button js-image">
-                <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-            </div>
+            <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                <div class="js-edit-button js-image">
+                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                </div>
+            <?php endif; ?>
         </div>
         <div class="js-edit">
             <div class="info-pro display-flex-center">
@@ -31,9 +33,11 @@
                     <h4>Etudiant en informatique</h4>
                 </div>
             </div>
-            <div class="js-edit-button js-info-pro">
-                <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-            </div>
+            <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                <div class="js-edit-button js-info-pro">
+                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>
@@ -53,9 +57,11 @@
             <div class="js-edit">
                 <h3>je sais pas</h3>
                 <p><?= $user['description_uti'] ?></p>
-                <div class="js-edit-button js-presentation">
-                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-                </div>
+                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                    <div class="js-edit-button js-presentation">
+                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                    </div>
+                <?php endif; ?>
             </div>
 
         </div>
@@ -73,9 +79,11 @@
                         </li>
                     <?php endforeach; ?>
                 </ol>
-                <div class="js-edit-button js-school-career">
-                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-                </div>
+                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                    <div class="js-edit-button js-school-career">
+                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
 
@@ -93,9 +101,11 @@
                         </li>
                     <?php endforeach; ?>
                 </ol>
-                <div class="js-edit-button js-experience">
-                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-                </div>
+                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                    <div class="js-edit-button js-experience">
+                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
 
@@ -111,9 +121,11 @@
                         </div>
                     </div>
                 <?php endforeach; ?>
-                <div class="js-edit-button js-language-skill">
-                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-                </div>
+                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                    <div class="js-edit-button js-language-skill">
+                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
         <div class="technical-skill">
@@ -128,9 +140,11 @@
                         </div>
                     </div>
                 <?php endforeach; ?>
-                <div class="js-edit-button js-technical-skill">
-                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-                </div>
+                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                    <div class="js-edit-button js-technical-skill">
+                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
 
@@ -140,9 +154,11 @@
                 <?php foreach ($hobby  as $key => $value) : ?>
                     <p><?= $value['loisir'] ?></p>
                 <?php endforeach; ?>
-                <div class="js-edit-button js-leisure">
-                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-                </div>
+                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                    <div class="js-edit-button js-leisure">
+                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
         <div class="contact">
@@ -152,9 +168,11 @@
                 <p><?= $user['VILLE_UTI'] . " " . $user['CODEPOSTAL_UTI'] . " " . $user['PAYS_UTI'] ?></p>
                 <p><?= $user['MAIL_UTI'] ?></p>
                 <p><?= $user['TEL_UTI'] ?></p>
-                <div class="js-edit-button js-contact">
-                    <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-                </div>
+                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                    <div class="js-edit-button js-contact">
+                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
         <!-- <div class="download">

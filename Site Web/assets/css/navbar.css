@@ -27,6 +27,7 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 
 .nav-logo img {
@@ -74,6 +75,7 @@ header {
 	padding: 0 36px;
 	text-decoration: none;
 	color: white;
+	cursor: pointer;
 }
 
 li a:hover {
@@ -91,6 +93,26 @@ li a:hover {
 
 .menu-burger img {
 	cursor: pointer;
+}
+
+.login {
+	position: absolute;
+	right: 0;
+	top: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	padding: 10px;
+	background: #404040;
+}
+
+.login div {
+	margin: 15px 0;
+}
+
+.login:not(.visible) {
+	display: none;
 }
 
 @media screen and (max-width: 900px) {

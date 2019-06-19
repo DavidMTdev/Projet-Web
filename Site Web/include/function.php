@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 function getPdo()
 {
@@ -356,4 +357,30 @@ if (isset($_POST['leisure'])) {
         )
     );
     header("Location: about.php?id=" . $_GET['id']);
+}
+
+//login admin
+if (isset($_POST["login"]) && isset($_POST["password"])) {
+
+    $stmUser = selectOne("SELECT pseudo, password FROM utilisateur  WHERE id_uti = :id_uti", array("id_uti" => $_GET['id']));
+
+    if ($_POST["login"] == $stmUser['pseudo'] && $_POST["password"] == $stmUser["password"]) {
+
+        $_SESSION["login"] = $_POST["login"];
+        $_SESSION["connectedAdmin"] = true;
+    }
+}
+
+if (isset($_SESSION["login"]) && isset($_GET['id'])) {
+
+    $satementUser = selectOne("SELECT id_uti, pseudo FROM utilisateur  WHERE id_uti = :id_uti AND pseudo = :pseudo", array(
+        "id_uti" => $_GET['id'],
+        "pseudo" => $_SESSION["login"]
+    ));
+
+    // var_dump($satementUser);
+
+    if ($satementUser === false) {
+        header("Location: disconnection.php");
+    }
 }

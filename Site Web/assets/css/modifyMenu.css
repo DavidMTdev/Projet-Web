@@ -19,6 +19,7 @@ main {
 	width: 100%;
 	/* margin-left: 60px; */
 	z-index: 2;
+	/* filter: blur(4px); */
 }
 
 .js-window-menu {
@@ -27,7 +28,7 @@ main {
 	left: 50%;
 	width: 55%;
 	height: 75%;
-	background: #292929;
+	background: #9fa3a8;
 	transform: translate(-50%, -50%);
 	z-index: 3;
 	overflow-y: hidden;
@@ -37,16 +38,17 @@ main {
 .js-tool-bar {
 	background: #5d5d5d;
 	width: 100%;
-	height: 15px;
-	border-bottom: #989898 2px solid;
-	padding-bottom: 3px;
+	height: 30px;
+	/* border-bottom: #989898 2px solid; */
+	/* padding-bottom: 3px; */
 	display: inline-flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .js-tool-nav,
 .js-tool-images {
-	height: 18px;
+	height: 30px;
 }
 
 .js-tool-nav ul {
@@ -64,13 +66,15 @@ main {
 .js-tool-images .js-img-delete,
 .js-tool-images .js-img-other {
 	float: right;
-	padding: 0 5px;
+	padding: 0 15px;
 	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .js-tool-images img {
-	height: 100%;
-	width: 100%;
+	height: 16px;
+	width: 16px;
 }
 
 .js-main-menu {
@@ -85,6 +89,7 @@ main {
 	grid-auto-columns: 100%;
 	grid-auto-rows: 70px;
 	margin: 0 50px;
+	text-transform: capitalize;
 }
 
 .js-input {
@@ -108,12 +113,34 @@ main {
 	transform: translateX(-50%);
 }
 
-.js-form-submit button {
+/* .js-form-submit button {
 	padding: 0.6em;
 	width: 200px;
 	background: #224fb8;
 	border: 2px #1c46a7 solid;
 	border-radius: 8px;
+} */
+
+.js-form-submit button{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #1b9cfc;
+	padding: 14px 30px;
+	outline: none;
+	color: white;
+	border-radius: 20px;
+	transition: 0.25s;
+	cursor: pointer;
+	width: 200px;
+	font-size: 1em;
+}
+
+.js-form-submit button:hover {
+	background: #1b9cfc;
+	color: white;
 }
 
 /* .js-bottom-line {

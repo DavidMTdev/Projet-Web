@@ -446,9 +446,9 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`ID_UTI`, `NOM_UTI`, `PRENOM_UTI`, `ADRESSE_UTI`, `VILLE_UTI`, `CODEPOSTAL_UTI`, `PAYS_UTI`, `MAIL_UTI`, `TEL_UTI`, `image_uti`, `age_uti`, `description_uti`, `pseudo`, `password`) VALUES
-(1, 'teixeira', 'jeremy', 'reg ger g g e gg', 'kdfbh', 5656, 'egergerg', 'dhffh@dshgfsg.com', 5464568, '1.png', 20, 'le roi des animaux', 'jerem', 'admin'),
-(2, 'teixeira', 'david', '52 rue Henri Barbusse', 'Bezons', 95870, 'France', 'david.teixeira@ynov.com', 658736152, '2.png', 20, 'jrehjghhgzhgrzhuigheuigs\r\n\r\nsdqfqsdfsdqf', 'dadou', 'admin'),
-(3, 'Ruiz', 'Thomas', '2 routes du marchais', 'Billancelles', 28190, 'France', 'Thomas.ruiz@ynov.com', 781711166, '3.png', 19, 'dafaezfezazefaf', 'thomas', 'admin');
+(1, 'RICHARD', 'Jeremy', '5 allée des roses', 'Suresnes', 92150, 'France', 'jeremy.richard@ynov.com', 0647557759, '1.png', 20, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'jerem', 'admin'),
+(2, 'TEIXEIRA', 'David', '52 rue Henri Barbusse', 'Bezons', 95870, 'France', 'david.teixeira@ynov.com', 0658736152, '2.png', 20, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'dadou', 'admin'),
+(3, 'Ruiz', 'Thomas', '2 routes du marchais', 'Billancelles', 28190, 'France', 'Thomas.ruiz@ynov.com', 0781711166, '3.png', 19, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'thomas', 'admin');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

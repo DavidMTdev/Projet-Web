@@ -68,10 +68,6 @@ a{
       display: flex;
   }
 
-  .index-project-infos-container img:hover{
-    filter:blur(1px);
-  }
-
   .project-title-container{
       text-align: center;
       color: rgb(0, 0, 0);

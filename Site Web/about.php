@@ -55,7 +55,7 @@
     <div class="container full-info">
         <div class="presentation-pro">
             <div class="js-edit">
-                <h3>je sais pas</h3>
+                <h1>Qui suis-je</h1>
                 <p><?= $user['description_uti'] ?></p>
                 <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
                     <div class="js-edit-button js-presentation">
@@ -67,7 +67,7 @@
         </div>
         <div class="school-career">
             <div class="js-edit">
-                <h3>Parcours Scolaire</h3>
+                <h1>Parcours Scolaire</h1>
                 <ol>
                     <?php foreach ($schoolCareer as $key => $value) : ?>
                         <li>
@@ -89,14 +89,14 @@
 
         <div class="experience-pro">
             <div class="js-edit">
-                <h3>Expériences Professionnelles</h3>
+                <h1>Expériences Professionnelles</h1>
                 <ol>
                     <?php foreach ($experiencePro as $key => $value) : ?>
                         <li>
                             <div>
-                                <p><?= $value['nom_entreprise'] ?></p>
-                                <p><?= $value['date_debut_exp'] . " - " . $value['date_fin_exp'] ?></p>
-                                <p><?= $value['poste_exp'] ?></p>
+                                <h2><?= $value['nom_entreprise'] ?></h2>
+                                <h4><?= $value['date_debut_exp'] . " - " . $value['date_fin_exp'] ?></h4>
+                                <h4><?= $value['poste_exp'] ?></h4>
                             </div>
                         </li>
                     <?php endforeach; ?>
@@ -111,7 +111,7 @@
 
         <div class="language-skill">
             <div class="js-edit">
-                <h3>Compétences Linguistiques</h3>
+                <h1>Compétences Linguistiques</h1>
                 <?php foreach ($languageSkill as $key => $value) : ?>
                     <div class="skillbox">
                         <p class="comp"><?= $value['NOM_LANG'] ?></p>
@@ -130,7 +130,7 @@
         </div>
         <div class="technical-skill">
             <div class="js-edit">
-                <h3>compétences techniques</h3>
+                <h1>compétences techniques</h1>
                 <?php foreach ($technicalSkill  as $key => $value) : ?>
                     <div class="skillbox">
                         <p class="comp"><img src=<?= "upload/" . $_GET['id'] . "/technical_skill" . "/" . $value['image_cles'] ?>> <?= $value['NOM_CLES'] ?></p>
@@ -150,7 +150,7 @@
 
         <div class="leisure">
             <div class="js-edit">
-                <h3>Mes Loisirs</h3>
+                <h1>Mes Loisirs</h1>
                 <?php foreach ($hobby  as $key => $value) : ?>
                     <p><?= $value['loisir'] ?></p>
                 <?php endforeach; ?>
@@ -163,7 +163,7 @@
         </div>
         <div class="contact">
             <div class="js-edit">
-                <h3>Contact</h3>
+                <h1>Contact</h1>
                 <p><?= $user['ADRESSE_UTI'] ?></p>
                 <p><?= $user['VILLE_UTI'] . " " . $user['CODEPOSTAL_UTI'] . " " . $user['PAYS_UTI'] ?></p>
                 <p><?= $user['MAIL_UTI'] ?></p>

@@ -38,7 +38,7 @@ function menuEditLeisure() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -73,7 +73,7 @@ function menuEditContact() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -116,7 +116,7 @@ function menuEditTechnicalSkill() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -155,7 +155,7 @@ function menuEditLanguageSkill() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -193,7 +193,7 @@ function menuEditExperience() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -233,7 +233,7 @@ function menuEditSchoolCareer() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -271,7 +271,7 @@ function menuEditPresentation() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -300,7 +300,7 @@ function menuEditInfoPro() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -335,7 +335,7 @@ function uploadImage() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	//* création du main dans fenettre de menu
@@ -367,7 +367,7 @@ function showWindowMenu() {
 	createDiv('.js-tool-bar', 'js-tool-images');
 
 	createDiv('.js-tool-images', 'js-img-delete');
-	createImg('.js-img-delete', 'assets/icon/icons8_Delete_1.ico');
+	createImg('.js-img-delete', 'assets/icon/icons8-effacer-filled-50.png');
 	createCancel('main', '.js-blur', '.js-img-delete');
 
 	// createDiv('.js-tool-images', 'js-img-other');

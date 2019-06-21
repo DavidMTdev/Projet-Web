@@ -157,7 +157,7 @@ main {
 }
 
 .project {
-	background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg");
+	background-image: url("https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -295,8 +295,23 @@ main {
 
 
 @media screen and (max-width: 1030px) {
+
+	.main-info{
+		height: auto;
+	}
 	.grid.column-2 {
 		grid-template-columns: 100%;
+	}
+
+	.grid{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.item{
+		height: 250px;
+		padding: 25px 0;
 	}
 
 	.info-contact {

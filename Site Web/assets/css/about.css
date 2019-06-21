@@ -276,6 +276,7 @@ main li:after {
 
 .js-edit h1{
 	padding-bottom: 20px;
+	text-transform: capitalize;
 }
 
 @media screen and (max-width: 800px) {

@@ -244,18 +244,18 @@ CREATE TABLE IF NOT EXISTS `loisirs` (
 --
 
 INSERT INTO `loisirs` (`id_loisir`, `loisir`) VALUES
-(1, 'gfh'),
-(2, 'ddvcvr'),
-(3, 'ccccc'),
-(4, 'ddddd'),
-(5, 'eeeee'),
-(6, 'gfhbsfdf'),
-(7, 'ggggg'),
-(8, 'hhhhhh'),
-(9, 'iiiii'),
-(10, 'jjjjj'),
-(11, 'kkkkk'),
-(12, 'llllll');
+(1, 'Outils informatique'),
+(2, 'Sport'),
+(3, 'Développement'),
+(4, 'Jeux vidéos'),
+(5, 'Lecture'),
+(6, 'Cinéma'),
+(7, 'Sport'),
+(8, 'Développement'),
+(9, 'Jeux-vidéos'),
+(10, 'Cinéma'),
+(11, 'Sport'),
+(12, 'Outils informatique');
 
 -- --------------------------------------------------------
 

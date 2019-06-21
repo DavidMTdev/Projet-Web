@@ -19,13 +19,24 @@
                     <div class="icon">
                         <img src="assets/icon/icons8-carte-contact-64.png">
                     </div>
-                    <h2>a propos</h2>
+                    <h2>A propos</h2>
                     <p>Apprenez à me connaître et plus encore.</p>
                 </div>
             </a>
         </div>
     </div>
     <div class="grid column-3">
+    <div class="project">
+            <a href=<?= "project.php?id=" . $_GET['id'] ?>>
+                <div class="item">
+                    <div class="icon">
+                        <img src="assets/icon/icons8-projet-96.png">
+                    </div>
+                    <h2>Projet</h2>
+                    <p>Découvrez les projets que j'ai réalisé.</p>
+                </div>
+            </a>
+        </div>
         <div class="company">
             <a href="#">
                 <div class="item">
@@ -33,32 +44,22 @@
                         <img src="assets/icon/icons8-société-64.png">
                     </div>
                     <h2>Entreprise</h2>
-                    <p>Apprenez à me connaître et plus encore.</p>
+                    <p>Découvrez les entreprises dans lesquelles j'ai travaillé.</p>
                 </div>
             </a>
         </div>
-        <div class="project">
-            <a href=<?= "project.php?id=" . $_GET['id'] ?>>
-                <div class="item">
-                    <div class="icon">
-                        <img src="assets/icon/icons8-projet-96.png">
-                    </div>
-                    <h2>projet</h2>
-                    <p>Apprenez à me connaître et plus encore.</p>
-                </div>
-            </a>
-        </div>
-        <dic class="article">
+        
+        <div class="article">
             <a href="#">
                 <div class="item">
                     <div class="icon">
                         <img src="assets/icon/icons8-nouvelles-64.png">
                     </div>
                     <h2>article</h2>
-                    <p>Apprenez à me connaître et plus encore.</p>
+                    <p>Suivez mon aventure dans les entreprises</p>
                 </div>
             </a>
-        </dic>
+        </div>
     </div>
 </section>
 <section id="contact" class="main-contact">

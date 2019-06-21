@@ -147,20 +147,6 @@
                 <?php endif; ?>
             </div>
         </div>
-
-        <div class="leisure">
-            <div class="js-edit">
-                <h1>Mes Loisirs</h1>
-                <?php foreach ($hobby  as $key => $value) : ?>
-                    <p><?= $value['loisir'] ?></p>
-                <?php endforeach; ?>
-                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
-                    <div class="js-edit-button js-leisure">
-                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
-                    </div>
-                <?php endif; ?>
-            </div>
-        </div>
         <div class="contact">
             <div class="js-edit">
                 <h1>Contact</h1>
@@ -175,6 +161,21 @@
                 <?php endif; ?>
             </div>
         </div>
+
+        <div class="leisure">
+            <div class="js-edit">
+                <h1>Mes Loisirs</h1>
+                <?php foreach ($hobby  as $key => $value) : ?>
+                    <p><?= $value['loisir'] ?></p>
+                <?php endforeach; ?>
+                <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
+                    <div class="js-edit-button js-leisure">
+                        <img src="assets/icon/icons8_Edit_Property_48px.png" alt="">
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+        
         <!-- <div class="download">
             <div class="js-edit">
                 <h3>Téléchargement</h3>

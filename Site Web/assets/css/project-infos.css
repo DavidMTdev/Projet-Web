@@ -148,7 +148,19 @@ body{
 
 
 
+@media screen and (max-width:1300px){
+    .project-screenshot-container{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+    }
+}
 
+@media screen and (max-width:700px){
+    .project-screenshot-container{
+        display: grid;
+        grid-template-columns: 100% ;
+    }
+}
 
 @media screen and (max-width:700px){
     .project-presentation{
@@ -157,7 +169,7 @@ body{
     .border-principal{
         width: 100px;
         height: 5px;
-        background: #1ed760;
+        background: #1B9CFC;
         margin: 15px auto;
     }
 
@@ -177,6 +189,10 @@ body{
     .supplement-title h1{
         padding: 10px 0;
         font-size: 30px;
+    }
+
+    .technology-used-logo{
+        display: block;
     }
 
 }

@@ -310,6 +310,7 @@ main li:after {
 	.full-info {
 		display: block;
 		background: #d3d9e0;
+		height: auto;
 	}
 
 	.about-full-info .container > div {

@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 	changePosition('.language-skill', '.contact');
 	// changePosition('.contact', '.download');
 
-	var element1 = document.querySelector('.leisure');
+	var element1 = document.querySelector('.contact');
 	var element2 = document.querySelector('.full-info');
 
 	element2.style.height = element1.offsetHeight + element1.offsetTop + 'px';

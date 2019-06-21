@@ -29,6 +29,9 @@
     <?php elseif ($_SERVER["SCRIPT_NAME"] === "/projet-web/site web/project-infos.php") : ?>
         <link rel="stylesheet" href="assets/css/navbar.css">
         <link rel="stylesheet" href="assets/css/project-infos.css">
+    <?php elseif ($_SERVER["SCRIPT_NAME"] === "/projet-web/site web/comingsoon.php") : ?>
+        <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/comingsoon.css">
     <?php endif; ?>
     <script src="https://kit.fontawesome.com/25659af8cc.js" async></script>
 </head>

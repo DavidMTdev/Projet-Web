@@ -1,59 +1,98 @@
-body,html{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background:black;
+body,
+html {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: black;
 }
 
-.background{
-    background: url(https://cdn.pixabay.com/photo/2014/05/03/01/04/manhattan-336708_1280.jpg)50% 50% no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    opacity: 0.5;
+.background {
+	background: url(https://cdn.pixabay.com/photo/2014/05/03/01/04/manhattan-336708_1280.jpg)50% 50% no-repeat;
+	background-size: cover;
+	height: calc(100vh - 60px);
+	width: 100%;
+	opacity: 0.5;
 }
 
-.container{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: white;
+.container {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
 }
 
-.container h1{
-    text-transform: uppercase;
-    font-size: 60px;
-    margin: 0px;
-    letter-spacing: 10px;
+.container h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+	margin: 0px;
+	letter-spacing: 10px;
 }
 
-.container h2{
-    margin: 0;
-    font-size: 20px;
-    font-weight: 500px;
-    font-style: italic;
+.container h2 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500px;
+	font-style: italic;
 }
 
-.count{
-    margin: 40px 0;
+.count {
+	margin: 40px 0;
 }
 
-.countd{
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    border: 2px solid;
-    margin: 0 30px;
-    font-size: 12px;
-    border-radius: 50%;
-    overflow:hidden;
+.countd {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border: 2px solid;
+	margin: 0 30px;
+	font-size: 12px;
+	border-radius: 50%;
+	overflow: hidden;
 }
 
-.countd span{
-    display: block;
-    font-size: 26px;
-    margin-top: 14px;
+.countd span {
+	display: block;
+	font-size: 26px;
+	margin-top: 14px;
+}
+
+@media screen and (max-width: 600px) {
+	.container h1 {
+		font-size: 30px;
+	}
+
+	.countd {
+		width: 60px;
+		height: 60px;
+		font-size: 6px;
+		margin: 0 10px;
+	}
+
+	.countd span {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.container h1 {
+		font-size: 20px;
+	}
+
+	.container h2 {
+		font-size: 10px;
+	}
+
+	.countd {
+		width: 50px;
+		height: 50px;
+		font-size: 6px;
+		margin: 0 10px;
+	}
+
+	.countd span {
+		font-size: 13px;
+	}
 }

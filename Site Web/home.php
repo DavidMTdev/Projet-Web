@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="grid column-3">
-    <div class="project">
+        <div class="project">
             <a href=<?= "project.php?id=" . $_GET['id'] ?>>
                 <div class="item">
                     <div class="icon">
@@ -38,7 +38,7 @@
             </a>
         </div>
         <div class="company">
-            <a href="#">
+            <a href=<?= "comingsoon.php?id=" . $_GET['id'] . "&page=entreprise" ?>>
                 <div class="item">
                     <div class="icon">
                         <img src="assets/icon/icons8-société-64.png">
@@ -48,9 +48,9 @@
                 </div>
             </a>
         </div>
-        
+
         <div class="article">
-            <a href="#">
+            <a href=<?= "comingsoon.php?id=" . $_GET['id'] . "&page=article" ?>>
                 <div class="item">
                     <div class="icon">
                         <img src="assets/icon/icons8-nouvelles-64.png">

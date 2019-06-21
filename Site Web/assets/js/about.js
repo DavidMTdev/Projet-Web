@@ -1,16 +1,18 @@
 window.addEventListener('load', () => {
-	changePosition('.presentation-pro', '.experience-pro');
+	setInterval(function() {
+		changePosition('.presentation-pro', '.experience-pro');
 
-	changePosition('.school-career', '.technical-skill');
-	changePosition('.experience-pro', '.language-skill');
-	changePosition('.technical-skill', '.leisure');
-	changePosition('.language-skill', '.contact');
-	// changePosition('.contact', '.download');
+		changePosition('.school-career', '.technical-skill');
+		changePosition('.experience-pro', '.language-skill');
+		changePosition('.technical-skill', '.leisure');
+		changePosition('.language-skill', '.contact');
+		// changePosition('.contact', '.download');
 
-	var element1 = document.querySelector('.contact');
-	var element2 = document.querySelector('.full-info');
+		var element1 = document.querySelector('.contact');
+		var element2 = document.querySelector('.full-info');
 
-	element2.style.height = element1.offsetHeight + element1.offsetTop + 'px';
+		element2.style.height = element1.offsetHeight + element1.offsetTop + 'px';
+	}, 10);
 });
 
 function changePosition(element1, element2) {

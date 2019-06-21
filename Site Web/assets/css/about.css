@@ -4,7 +4,7 @@
 }
 
 body {
-	background: #dfe4ea;
+	background: #c3c7cc;
 }
 
 main {
@@ -12,37 +12,8 @@ main {
 	height: auto;
 }
 
-.download h3 {
-	margin: 15px 0;
-	text-transform: capitalize;
-}
-.leisure h3 {
-	margin: 15px 0;
-	text-transform: capitalize;
-}
-
-.technical-skill h3 {
-	margin: 15px 0;
-	text-transform: capitalize;
-}
-
-.language-skill h3 {
-	margin: 15px 0;
-	text-transform: capitalize;
-}
-
 .experience-pro h2 {
 	padding: 5px 0;
-	text-transform: capitalize;
-}
-
-.presentation-pro h3 {
-	margin: 15px 0;
-	text-transform: capitalize;
-}
-
-.school-career h3 {
-	margin: 15px 0;
 	text-transform: capitalize;
 }
 
@@ -79,7 +50,7 @@ main {
 .about-full-info {
 	padding: 20px 0;
 	width: 100%;
-	background: #dfe4ea;
+	background: #c3c7cc;
 }
 
 .social img {
@@ -126,9 +97,11 @@ main {
 	font-size: 3em;
 	text-transform: capitalize;
 }
+
 .info-pro h4 {
 	font-size: 1.5em;
 }
+
 .info-pro-container {
 	text-align: center;
 }
@@ -220,6 +193,7 @@ main {
 
 main ol {
 	list-style-type: none;
+	padding-left: 20px;
 }
 
 main li {
@@ -250,7 +224,7 @@ main li:after {
 }
 
 .js-edit {
-	padding: 40px 20px;
+	padding: 40px 30px;
 	position: relative;
 }
 
@@ -294,7 +268,7 @@ main li:after {
 		margin: 10px 0;
 	}
 	.info-pro h3 {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 	.info-pro h4 {
 		font-size: 1.2em;
@@ -317,7 +291,7 @@ main li:after {
 	.about-full-info .container > div {
 		position: static;
 		width: 90%;
-		padding: 20px 0 20px 20px;
+		padding: 5px 0 5px 5px;
 		height: auto;
 	}
 
@@ -345,5 +319,11 @@ main li:after {
 	.presentation-principal {
 		height: auto;
 		background: #d3d9e0;
+	}
+
+	.js-edit h1{
+		padding-bottom: 20px;
+		text-transform: capitalize;
+		font-size: 1.5em;
 	}
 }

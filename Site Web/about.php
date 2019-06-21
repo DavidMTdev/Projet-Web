@@ -44,8 +44,7 @@
 
 <div class="about-social-info display-flex-center">
     <div class="container social">
-        <a href="#"><img src="assets/img/facebook logo.png" alt=""></a>
-        <a href="#"><img src="assets/img/twitter logo.png" alt=""></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" alt=""></a>
         <a href="#"><img src="assets/img/google plus logo.png" alt=""></a>
         <a href="#"><img src="assets/img/linkedin logo.png" alt=""></a>
     </div>
@@ -72,9 +71,9 @@
                     <?php foreach ($schoolCareer as $key => $value) : ?>
                         <li>
                             <div>
-                                <p><?= $value['NOM_ECOLE'] ?></p>
-                                <p><?= $value['DATE_DEBUT_SCOLARITE'] . " - " . $value['DATE_FIN_SCOLARITE'] ?></p>
-                                <p><?= $value['DIPLOME'] ?></p>
+                                <h3><?= $value['NOM_ECOLE'] ?></h3>
+                                <h4><?= $value['DATE_DEBUT_SCOLARITE'] . " - " . $value['DATE_FIN_SCOLARITE'] ?></h4>
+                                <h4><?= $value['DIPLOME'] ?></h4>
                             </div>
                         </li>
                     <?php endforeach; ?>
@@ -94,7 +93,7 @@
                     <?php foreach ($experiencePro as $key => $value) : ?>
                         <li>
                             <div>
-                                <h2><?= $value['nom_entreprise'] ?></h2>
+                                <h3><?= $value['nom_entreprise'] ?></h3>
                                 <h4><?= $value['date_debut_exp'] . " - " . $value['date_fin_exp'] ?></h4>
                                 <h4><?= $value['poste_exp'] ?></h4>
                             </div>
@@ -164,7 +163,8 @@
             <div class="js-edit">
                 <h1>Contact</h1>
                 <p><?= $user['ADRESSE_UTI'] ?></p>
-                <p><?= $user['VILLE_UTI'] . " " . $user['CODEPOSTAL_UTI'] . " " . $user['PAYS_UTI'] ?></p>
+                <p><?= $user['CODEPOSTAL_UTI'] . " " . $user['VILLE_UTI']?></p>
+                <p><?= $user['PAYS_UTI'] ?></p>
                 <p><?= $user['MAIL_UTI'] ?></p>
                 <p><?= $user['TEL_UTI'] ?></p>
                 <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>

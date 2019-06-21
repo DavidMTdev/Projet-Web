@@ -85,4 +85,10 @@ a{
         grid-template-columns: 100%;
         grid-gap: 10px;
       }
+
+      main{
+        display:flex;
+        justify-content: center;
+        height: auto;
+    }
 }

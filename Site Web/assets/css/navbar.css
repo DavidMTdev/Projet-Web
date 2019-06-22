@@ -121,7 +121,7 @@ li a:hover {
 		margin: 0;
 		padding: 0;
 		width: 100%;
-		background: #404040;
+		background: #aab3c0;
 		float: right;
 		text-align: center;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -154,5 +154,15 @@ li a:hover {
 		top: 100%;
 		width: 100%;
 		z-index: 3;
+	}
+
+	.nav-header {
+		height: 60px;
+		background: #aab3c0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		width: 100%;
 	}
 }

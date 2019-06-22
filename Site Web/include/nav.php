@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="menu-burger">
-        <img src="assets/icon/MenuBurguer_noir.png" alt="">
+        <img src="assets/icon/icons8-menu-64.png" alt="">
     </div>
     <script src="assets/js/navbar.js" async></script>
 </div>

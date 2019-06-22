@@ -100,10 +100,36 @@ main {
 }
 
 .js-input input {
-	border: #989898 1px solid;
-	padding: 0.4em 0.8em;
+	/* border: #989898 1px solid;
+	padding: 0.4em 0.8em;*/
 	width: 70%;
-	border-radius: 4px;
+
+	border: 0;
+    background: none;
+    display: block;
+    /* margin: 0 20px; */
+    padding: 10px;
+    border: 2px solid #1B9CFC;
+    /* padding: 14px 5px; */
+    /* width: auto; */
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    box-shadow: 0 4px 4px #404040;
+    transition: 0.25s;
+}
+
+.js-input input::placeholder{
+	color: white;
+}
+
+
+.js-input input[type="submit"]{
+	cursor: pointer;
+}
+.js-input input[type="submit"]:hover{
+	cursor: pointer;
+	background: #1B9CFC;
 }
 
 .js-form-submit {
@@ -172,4 +198,37 @@ main {
 .js-main-menu::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px #bdbdbd80;
+}
+
+
+@media screen and (max-width:1200px){
+
+	.js-form-submit button {
+		border: 0;
+		background: none;
+		display: block;
+		margin: 20px auto;
+		text-align: center;
+		border: 2px solid #1b9cfc;
+		padding: 14px 30px;
+		outline: none;
+		color: white;
+		border-radius: 20px;
+		transition: 0.25s;
+		cursor: pointer;
+		width: 120px;
+		font-size: 1em;
+	}
+
+	.js-form-input {
+		display: grid;
+		grid-auto-columns: 100%;
+		grid-auto-rows: 50px;
+		margin: 0 10px;
+		text-transform: capitalize;
+	}
+
+	.comp{
+		font-size: 0.8em;
+	}
 }

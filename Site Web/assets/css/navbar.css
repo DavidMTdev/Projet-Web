@@ -85,16 +85,14 @@ li a:hover {
 	color: white;
 }
 
-/* main{
-      padding-top:69px;
-  } */
-
 .menu-burger {
 	display: none;
 }
 
 .menu-burger img {
 	cursor: pointer;
+	height: 100%;
+	width: 100%;
 }
 
 .login {
@@ -117,7 +115,7 @@ li a:hover {
 	display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
 	.nav-menu {
 		display: block;
 		margin: 0;
@@ -134,9 +132,10 @@ li a:hover {
 	}
 
 	.menu-burger {
-		width: 100%;
+		width: 60px;
+		height: 100%;
 		display: flex;
-		justify-content: flex-end;
+		margin-left: 20px;
 	}
 
 	.nav {
@@ -146,7 +145,14 @@ li a:hover {
 	.nav-visible {
 		display: block;
 		position: absolute;
-		top: 70px;
+		top: 60px;
 		right: 0;
+	}
+
+	.login {
+		left: 0;
+		top: 100%;
+		width: 100%;
+		z-index: 3;
 	}
 }

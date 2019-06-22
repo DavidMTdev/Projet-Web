@@ -7,7 +7,7 @@
             <li><a href=<?= "project.php?id=" . $_GET['id'] ?>>Projet</a></li>
             <li><a href=<?= "comingsoon.php?id=" . $_GET['id'] . "&page=article" ?>>Article</a></li>
         </ul>
-        <ul class="nav-login">
+        <ul class="nav-login js-login">
             <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>
                 <li><a href="disconnection.php">Deconnexion</a></li>
             <?php else : ?>
@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="menu-burger">
-        <img src="icons/icons8-menu-70.png" alt="">
+        <img src="assets/icon/MenuBurguer_noir.png" alt="">
     </div>
     <script src="assets/js/navbar.js" async></script>
 </div>

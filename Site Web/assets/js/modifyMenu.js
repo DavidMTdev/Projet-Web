@@ -91,12 +91,12 @@ function menuEditContact() {
 
 	const input = document.querySelectorAll('.js-input');
 
-	createInput('', input[0], 'text', 'address', 'adresse', '');
-	createInput('', input[1], 'text', 'city', 'ville', '');
-	createInput('', input[2], 'number', 'postal_code', 'code postal', '');
-	createInput('', input[3], 'text', 'country', 'pays', '');
-	createInput('', input[4], 'email', 'mail', 'mail', '');
-	createInput('', input[5], 'number', 'phone', 'téléphone', '');
+	createInput('', input[0], 'text', 'address', 'Adresse', '');
+	createInput('', input[1], 'text', 'city', 'Ville', '');
+	createInput('', input[2], 'number', 'postal_code', 'Code postal', '');
+	createInput('', input[3], 'text', 'country', 'Pays', '');
+	createInput('', input[4], 'email', 'mail', 'Mail', '');
+	createInput('', input[5], 'number', 'phone', 'Téléphone', '');
 
 	createDiv('.js-main-menu form', 'js-form-submit');
 
@@ -133,7 +133,7 @@ function menuEditTechnicalSkill() {
 
 		const input = document.querySelectorAll('.js-input');
 
-		createInput('', input[i], 'text', 'technicalSkill', 'Langue ', '');
+		createInput('', input[i], 'text', 'technicalSkill', 'Compétence', '');
 		createInput('', input[i], 'number', 'levelTechnicalSkill', 'Niveau de compétence', '');
 		createInput('', input[i], 'file', 'imageTechnicalSkill', '', '');
 		createInput('', input[i], 'hidden', 'idTechnicalSkill', '', idTechnicalSkill[i]);
@@ -211,8 +211,8 @@ function menuEditExperience() {
 		const input = document.querySelectorAll('.js-input');
 
 		createInput('', input[i], 'text', 'companyName', "Nom de l'entreprise", '');
-		createInput('', input[i], 'number', 'startDate', "Date d'arriver dans l'entreprise", '');
-		createInput('', input[i], 'number', 'endDate', "Date de départ dans l'entreprise", '');
+		createInput('', input[i], 'number', 'startDate', "Date d'arrivée dans l'entreprise", '');
+		createInput('', input[i], 'number', 'endDate', "Date de départ de l'entreprise", '');
 		createInput('', input[i], 'text', 'post', 'Poste', '');
 		createInput('', input[i], 'hidden', 'idExperience', '', idExperience[i]);
 		createInput('', input[i], 'hidden', 'key', '', keyExperience[i]);
@@ -253,7 +253,7 @@ function menuEditSchoolCareer() {
 		createInput('', input[i], 'text', 'schoolName', "Nom de l'école", '');
 		createInput('', input[i], 'number', 'startDate', 'Date de début de scolarité', '');
 		createInput('', input[i], 'number', 'endDate', 'Date de fin de scolarité', '');
-		createInput('', input[i], 'text', 'graduate', 'Diplome', '');
+		createInput('', input[i], 'text', 'graduate', 'Diplôme', '');
 		createInput('', input[i], 'hidden', 'idSchool', '', idSchoolCareer[i]);
 		createInput('', input[i], 'hidden', 'key', '', keySchool[i]);
 		createInput('', input[i], 'submit', '', '', 'Valider');
@@ -282,7 +282,7 @@ function menuEditPresentation() {
 
 	createDiv('.js-form-input', 'js-input');
 
-	createTextArea('.js-input', '', '', 'presentation', 'Entrer votre presentation ...', '40', '5');
+	createTextArea('.js-input', '', '', 'presentation', 'Entrez votre présentation ...', '40', '5');
 
 	createDiv('.js-main-menu form', 'js-form-submit');
 

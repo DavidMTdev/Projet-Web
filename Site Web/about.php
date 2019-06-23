@@ -71,7 +71,7 @@
                     <?php foreach ($schoolCareer as $key => $value) : ?>
                         <li>
                             <div>
-                                <h3><?= $value['NOM_ECOLE'] ?></h3>
+                                <h3 style="padding:5px 0; text-transform:capitalize;"><?= $value['NOM_ECOLE'] ?></h3>
                                 <h4><?= $value['DATE_DEBUT_SCOLARITE'] . " - " . $value['DATE_FIN_SCOLARITE'] ?></h4>
                                 <h4><?= $value['DIPLOME'] ?></h4>
                             </div>
@@ -93,7 +93,7 @@
                     <?php foreach ($experiencePro as $key => $value) : ?>
                         <li>
                             <div>
-                                <h3><?= $value['nom_entreprise'] ?></h3>
+                                <h3 style="padding:5px 0; text-transform:capitalize;"><?= $value['nom_entreprise'] ?></h3>
                                 <h4><?= $value['date_debut_exp'] . " - " . $value['date_fin_exp'] ?></h4>
                                 <h4><?= $value['poste_exp'] ?></h4>
                             </div>
@@ -129,7 +129,7 @@
         </div>
         <div class="technical-skill">
             <div class="js-edit">
-                <h1>compétences techniques</h1>
+                <h1>Compétences Techniques</h1>
                 <?php foreach ($technicalSkill  as $key => $value) : ?>
                     <div class="skillbox">
                         <p class="comp"><img src=<?= "upload/" . $_GET['id'] . "/technical_skill" . "/" . $value['image_cles'] ?>> <?= $value['NOM_CLES'] ?></p>

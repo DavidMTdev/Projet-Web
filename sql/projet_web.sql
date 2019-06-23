@@ -101,15 +101,15 @@ CREATE TABLE IF NOT EXISTS `competences_lang` (
 --
 
 INSERT INTO `competences_lang` (`ID_LANG`, `NOM_LANG`, `NIVEAU_LANG`, `CERTIFICATION_LANG`) VALUES
-(1, 'ezezez', 20, NULL),
-(2, 'ezzeafa', 23, NULL),
-(3, 'zzze', 100, NULL),
-(4, 'Portugais', 90, NULL),
-(5, 'Anglais', 50, NULL),
-(6, 'Anglais', 60, NULL),
-(7, 'Espagnol', 40, NULL),
-(8, 'ezfze', 80, NULL),
-(9, 'fsdf', 10, NULL);
+(1, 'FRANCAIS', 95, NULL),
+(2, 'ANGLAIS', 70, NULL),
+(3, 'ESPAGNOL', 60, NULL),
+(4, 'FRANCAIS', 90, NULL),
+(5, 'ANGLAIS', 50, NULL),
+(6, 'PORTUGAIS', 90, NULL),
+(7, 'FRANCAIS', 90, NULL),
+(8, 'ANGLAIS', 80, NULL),
+(9, 'ESPAGNOL', 10, NULL);
 
 -- --------------------------------------------------------
 
@@ -132,21 +132,21 @@ CREATE TABLE IF NOT EXISTS `competence_cles` (
 --
 
 INSERT INTO `competence_cles` (`ID_COMP_CLES`, `NOM_CLES`, `NIVEAU_CLES`, `CERTIFICATION_CLES`, `image_cles`) VALUES
-(1, 'fdfgnj', 10, NULL, '1.png'),
+(1, 'HTML5', 80, NULL, '1.png'),
 (2, 'CSS3', 80, NULL, '2.png'),
-(3, 'dsdff', 45, NULL, '3.png'),
-(4, 'LANGAGE C', 70, NULL, '4.png'),
-(5, 'reter', 12, NULL, '5.png'),
-(6, 'CCNA1', 60, NULL, '6.png'),
-(7, 'PYTHON', 80, NULL, '7.png'),
+(3, 'LANGAGE C', 45, NULL, '3.png'),
+(4, 'PYTHON', 70, NULL, '4.png'),
+(5, 'CCNA1', 12, NULL, '5.png'),
+(6, 'CCNA1', 60, NULL, '10.png'),
+(7, 'PYTHON', 80, NULL, '9.png'),
 (8, 'LANGAGE C', 80, NULL, '8.png'),
-(9, 'HTML5', 70, NULL, '9.png'),
-(10, 'CSS3', 70, NULL, '10.png'),
-(11, 'WINDOWS SERVER', 70, NULL, '11.png'),
-(12, 'CCNA1', 60, NULL, '12.png'),
-(13, 'PYTHON', 80, NULL, '13.png'),
-(14, 'LANGAGE C', 75, NULL, '14.png'),
-(15, 'HTML5', 50, NULL, '15.png');
+(9, 'HTML5', 70, NULL, '6.png'),
+(10, 'CSS3', 70, NULL, '7.png'),
+(11, 'WINDOWS SERVER', 70, NULL, '11.jpg'),
+(12, 'CCNA1', 60, NULL, '15.png'),
+(13, 'PYTHON', 80, NULL, '14.png'),
+(14, 'LANGAGE C', 75, NULL, '13.png'),
+(15, 'HTML5', 50, NULL, '12.png');
 
 -- --------------------------------------------------------
 
@@ -192,7 +192,7 @@ INSERT INTO `effectuer` (`ID_EXP`, `ID_UTI`) VALUES
 DROP TABLE IF EXISTS `experience_pro`;
 CREATE TABLE IF NOT EXISTS `experience_pro` (
   `ID_EXP` int(11) NOT NULL AUTO_INCREMENT,
-  `POSTE_EXP` varchar(20) NOT NULL,
+  `POSTE_EXP` varchar(40) NOT NULL,
   `NOM_ENTREPRISE` varchar(20) NOT NULL,
   `DATE_DEBUT_EXP` year(4) NOT NULL,
   `DATE_FIN_EXP` year(4) DEFAULT NULL,
@@ -205,26 +205,26 @@ CREATE TABLE IF NOT EXISTS `experience_pro` (
 --
 
 INSERT INTO `experience_pro` (`ID_EXP`, `POSTE_EXP`, `NOM_ENTREPRISE`, `DATE_DEBUT_EXP`, `DATE_FIN_EXP`, `FONCTION_EXP`) VALUES
-(1, 'ddddd', 'xxxxxx', 2018, 2019, 'eaeeae'),
-(2, 'eze', 'rztbgfb', 2019, 2021, 'dsqfdsq'),
-(3, 'vvcvcvcv', 'xxxxxx', 2023, 2030, 'zazazazaza'),
-(4, 'zaddhyj', 'dsfsf', 2018, 2019, 'sdfsdfsd'),
-(5, 'fgfqgf', 'qdfdsqf', 2020, 2020, 'dqsfqsdfqsd'),
-(6, 'ddddd', 'xxxxxx', 2018, 2019, 'eaeeae'),
-(7, 'eze', 'rztbgfb', 2019, 2021, 'dsqfdsq'),
-(8, 'vvcvcvcv', 'xxxxxx', 2023, 2030, 'zazazazaza'),
-(9, 'zaddhyj', 'dsfsf', 2018, 2019, 'sdfsdfsd'),
-(10, 'fgfqgf', 'qdfdsqf', 2020, 2020, 'dqsfqsdfqsd'),
-(11, 'ddddd', 'xxxxxx', 2018, 2019, 'eaeeae'),
-(12, 'eze', 'rztbgfb', 2019, 2021, 'dsqfdsq'),
-(13, 'vvcvcvcv', 'xxxxxx', 2023, 2030, 'zazazazaza'),
-(14, 'zaddhyj', 'dsfsf', 2018, 2019, 'sdfsdfsd'),
-(15, 'fgfqgf', 'qdfdsqf', 2020, 2020, 'dqsfqsdfqsd'),
-(16, 'ddddd', 'xxxxxx', 2018, 2019, 'eaeeae'),
-(17, 'eze', 'rztbgfb', 2019, 2021, 'dsqfdsq'),
-(18, 'vvcvcvcv', 'xxxxxx', 2023, 2030, 'zazazazaza'),
-(19, 'zaddhyj', 'dsfsf', 2018, 2019, 'sdfsdfsd'),
-(20, 'fgfqgf', 'qdfdsqf', 2020, 2020, 'dqsfqsdfqsd');
+(1, 'Consultant informatique', 'Kaos Consulting', 2019, 2019, 'A remplir'),
+(2, 'Kinésithérapeute', 'Hopital Foch', 2016, 2016, 'A remplir'),
+(3, 'Entraineur', 'Rugby club Suresnois', 2013, 2013, 'A remplir'),
+(4, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(5, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(6, 'Consultant informatique', 'SFR', 2019, 2019, 'A remplir'),
+(7, 'Stagiaire', 'Bureau Veritas', 2014, 2014, 'A remplir'),
+(8, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(9, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(10, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(11, 'CDD', 'Emerson', 2018, 2018, 'A remplir'),
+(12, 'Stagiaire', 'Mairie de Houilles', 2018, 2018, 'A remplir'),
+(13, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(14, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(15, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(16, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(17, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(18, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(19, 'A remplir', 'A remplir', 0000, 0000, 'A remplir'),
+(20, 'A remplir', 'A remplir', 0000, 0000, 'A remplir');
 
 -- --------------------------------------------------------
 
@@ -278,15 +278,15 @@ CREATE TABLE IF NOT EXISTS `parcours_scolaire` (
 --
 
 INSERT INTO `parcours_scolaire` (`ID_SCOLAIRE`, `NOM_ECOLE`, `DATE_DEBUT_SCOLARITE`, `DATE_FIN_SCOLARITE`, `DIPLOME`) VALUES
-(1, 'aaaaaaaa', 2019, 2021, 'regzeg'),
-(2, 'aaaaa', 2015, 1999, 'ddddd'),
+(1, 'Campus YNOV', 2018, 2024, 'Diplôme d''expert informatique'),
+(2, 'Lycée Paul Langevin', 2015, 2018, 'Baccalauréat STL'),
 (3, 'Collège Emile Zola', 2011, 2015, 'Brevet des collèges'),
-(4, 'Lycée George Braques', 2014, 2018, 'Baccalauréat Scientifique'),
-(5, 'Collège Gabriel Périe', 2010, 2014, 'Brevet des collèges'),
-(6, 'Lycée Marceau', 2015, 2018, 'Baccalauréat Scientifique'),
-(7, 'Collège Louis Pergaud', 2011, 2015, 'Brevet des collèges'),
-(8, 'fzeez', 2018, 2018, 'efez'),
-(9, 'ezfze', 2018, 2018, 'zezef');
+(4, 'Campus YNOV', 2018, 2024, 'Diplôme d''expert informatique'),
+(5, 'Lycée George Braques', 2014, 2018, 'Baccalauréat Scientifique'),
+(6, 'Collège Gabriel Périe', 2010, 2014, 'Brevet des collèges'),
+(7, 'Campus YNOV', 2018, 2024, 'Diplôme d''expert informatique'),
+(8, 'Lycée Marceau', 2015, 2018, 'Baccalauréat Scientifique'),
+(9, 'Collège Louis Pergaud', 2011, 2015, 'Brevet des collèges');
 
 -- --------------------------------------------------------
 
@@ -373,18 +373,21 @@ CREATE TABLE IF NOT EXISTS `projet` (
 --
 
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description_projet`) VALUES
-(1, 'Sportify', 'une petite description'),
-(2, 'Waytopia', 'Création d\'un site internet permettant au internaute de regarder des article parlant de l’écologie, recevoir des tips pour avoir une vie plus saine et plus écologique,et création d’événement écologique pour améliorer la vie en ville.'),
-(3, 'rzerzgrzeg', ' rezgrz egz th zth zht z h rhrghzefgh fghjgsqd gfsqdg fqdsg fhqhksdg fhqfg hdqsgf hdqsg fhdsq gfsqdg hfqdsghf ghdsq gf sqdgfhkqdg hqdsgkuqgsd hgkqfh gshqdgkjsqdjkg qdfughnqds ughlng ndfg qjkswg jkqfdgqd fgnk fqkjgh fdjghkqjd gjkfqdhqufkd hg,qdks hjkqhq d'),
-(4, 'thzhzrthzr', 'z th tzh zhrzhsd shtjfghfg h'),
-(5, 'dsfdqsqdsfdqqdfs', 'fshgqdhqdghqgf'),
-(6, 'dsfdqsqdsfdqqdfs', 'fshgqdhqdghqgf'),
-(7, 'dsfdqsqdsfdqqdfs', 'fshgqdhqdghqgf'),
-(8, 'dsfdqsqdsfdqqdfs', 'fshgqdhqdghqgf'),
-(9, 'dsfdqsqdsfdqqdfs', 'fshgqdhqdghqgf'),
-(10, 'dsfdqsqdsfdqqdfs', 'fshgqdhqdghqgf'),
-(11, 'dsfdqsqdsfdqqdfs', 'fshgqdhqdghqgf'),
-(12, 'dsfdqsqdsfdqqdfs', 'fshgqdhqdghqgf');
+(1, 'Sportify', 'Sportify vous propose un accompagnement sportif afin de vous aider a remplir vos objectifs.
+                    Nos coach vous proposerons des programmes personalisés et vous pourrez suivre votre
+                    évolution au fil du temps grace a notre calcul de performance et d''IMC en ligne. Donc finis
+                    les excuse pour ne pas faire de sport car Sportify est la !'),
+(2, 'Waytopia', 'Création d''un site internet permettant au internaute de regarder des article parlant de l’écologie, recevoir des tips pour avoir une vie plus saine et plus écologique,et création d’événement écologique pour améliorer la vie en ville.'),
+(3, 'A remplir', ' A remplir'),
+(4, 'A remplir', 'A remplir'),
+(5, 'A remplir', 'A remplir'),
+(6, 'A remplir', 'A remplir'),
+(7, 'A remplir', 'A remplir'),
+(8, 'A remplir', 'A remplir'),
+(9, 'A remplir', 'A remplir'),
+(10, 'A remplir', 'A remplir'),
+(11, 'A remplir', 'A remplir'),
+(12, 'A remplir', 'A remplir');
 
 -- --------------------------------------------------------
 
@@ -431,7 +434,7 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `CODEPOSTAL_UTI` int(5) NOT NULL,
   `PAYS_UTI` char(15) NOT NULL,
   `MAIL_UTI` varchar(500) NOT NULL,
-  `TEL_UTI` int(10) NOT NULL,
+  `TEL_UTI` varchar(10) NOT NULL,
   `image_uti` varchar(1000) DEFAULT NULL,
   `age_uti` int(11) DEFAULT NULL,
   `description_uti` varchar(250) DEFAULT NULL,
@@ -446,9 +449,9 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`ID_UTI`, `NOM_UTI`, `PRENOM_UTI`, `ADRESSE_UTI`, `VILLE_UTI`, `CODEPOSTAL_UTI`, `PAYS_UTI`, `MAIL_UTI`, `TEL_UTI`, `image_uti`, `age_uti`, `description_uti`, `pseudo`, `password`) VALUES
-(1, 'RICHARD', 'Jeremy', '5 allée des roses', 'Suresnes', 92150, 'France', 'jeremy.richard@ynov.com', 0647557759, '1.png', 20, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'jerem', 'admin'),
-(2, 'TEIXEIRA', 'David', '52 rue Henri Barbusse', 'Bezons', 95870, 'France', 'david.teixeira@ynov.com', 0658736152, '2.png', 20, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'dadou', 'admin'),
-(3, 'Ruiz', 'Thomas', '2 routes du marchais', 'Billancelles', 28190, 'France', 'Thomas.ruiz@ynov.com', 0781711166, '3.png', 19, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'thomas', 'admin');
+(1, 'RICHARD', 'Jeremy', '5 allée des roses', 'Suresnes', 92150, 'France', 'jeremy.richard@ynov.com', '0647557759', '1.png', 20, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'jerem', 'admin'),
+(2, 'TEIXEIRA', 'David', '52 rue Henri Barbusse', 'Bezons', 95870, 'France', 'david.teixeira@ynov.com', '0658736152', '2.png', 20, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'dadou', 'admin'),
+(3, 'Ruiz', 'Thomas', '2 routes du marchais', 'Billancelles', 28190, 'France', 'Thomas.ruiz@ynov.com', '0781711166', '3.png', 19, 'Actuellement étudiant en informatique au campus Ynov informatique je compte obtenir un diplôme d''expert informatique ', 'thomas', 'admin');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -82,6 +82,7 @@ main {
 	height: calc(100% - 70px);
 	overflow-y: scroll;
 	position: relative;
+	padding: 15px 0;
 }
 
 .js-form-input {
@@ -100,18 +101,12 @@ main {
 }
 
 .js-input input {
-	/* border: #989898 1px solid;
-	padding: 0.4em 0.8em;*/
 	width: 70%;
-
 	border: 0;
     background: none;
     display: block;
-    /* margin: 0 20px; */
     padding: 10px;
     border: 2px solid #1B9CFC;
-    /* padding: 14px 5px; */
-    /* width: auto; */
     outline: none;
     color: white;
     border-radius: 24px;
@@ -130,6 +125,13 @@ main {
 .js-input input[type="submit"]:hover{
 	cursor: pointer;
 	background: #1B9CFC;
+}
+
+.js-input text-area{
+	width: 100%;
+	height: 100%;
+	max-width: 525px;
+	min-width: 525px;
 }
 
 .js-form-submit {

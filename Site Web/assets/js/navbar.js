@@ -1,10 +1,6 @@
-window.addEventListener('load', () => {
-	setInterval(function() {
-		const login = document.querySelector('.nav-header .js-login');
+const login = document.querySelector('.nav-header .js-login');
 
-		login.addEventListener('click', loginVisible);
-	}, 1000);
-});
+login.addEventListener('click', loginVisible);
 
 function loginVisible() {
 	document.querySelector('.nav-header .login').classList.toggle('visible');
@@ -16,7 +12,7 @@ function toggleVisibleClassMenuBurger(params) {
 
 //creation du menu burger
 const burgerFunction = document.querySelector('.menu-burger img');
-burgerFunction.addEventListener('click', addLoginBurger);
+// burgerFunction.addEventListener('click', addLoginBurger);
 
 burgerFunction.addEventListener('click', cancelLogin);
 

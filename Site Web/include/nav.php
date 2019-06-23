@@ -6,6 +6,7 @@
             <li><a href=<?= "project.php?id=" . $_GET['id'] ?>>Projet</a></li>
             <li><a href=<?= "comingsoon.php?id=" . $_GET['id'] . "&page=entreprise" ?>>Entreprise</a></li>
             <li><a href=<?= "comingsoon.php?id=" . $_GET['id'] . "&page=article" ?>>Article</a></li>
+            <li><a href=<?= "choice.php" ?>>Exemple</a></li>
         </ul>
         <ul class="nav-login js-login">
             <?php if (isset($_SESSION["connectedAdmin"]) && $_SESSION["connectedAdmin"]) : ?>

@@ -89,6 +89,24 @@ function uploadFile($fileInfo, $folder, $fileName)
     }
 }
 
+function uploadMultipleFile($fileInfo, $folder, $fileName)
+{
+    if ($fileInfo == null) {
+        throw new Exception("il n'y a pas d'image");
+        return 0;
+    }
+
+    $source = $fileInfo;
+
+    $destination = $folder . DIRECTORY_SEPARATOR . $fileName . ".png";
+
+    if (move_uploaded_file($source, $destination) == true) {
+        echo "Ca a marché";
+    } else {
+        echo "Ca n'a pas marché";
+    }
+}
+
 
 if (isset($_POST["firstname"]) && isset($_POST['lastname']) && isset($_POST['year'])) {
 
@@ -383,4 +401,65 @@ if (isset($_SESSION["login"]) && isset($_GET['id'])) {
     if ($satementUser === false) {
         header("Location: disconnection.php");
     }
+}
+
+
+if (isset($_FILES['technologyImg'])) {
+
+    $folder =  __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "upload" . DIRECTORY_SEPARATOR . $_GET['id'] . DIRECTORY_SEPARATOR . "projet" . DIRECTORY_SEPARATOR . $_GET['projet'] . DIRECTORY_SEPARATOR . "technology";
+
+    uploadMultipleFile($_FILES["technologyImg"]['tmp_name'][0], $folder, 1);
+    uploadMultipleFile($_FILES["technologyImg"]['tmp_name'][1], $folder, 2);
+    uploadMultipleFile($_FILES["technologyImg"]['tmp_name'][2], $folder, 3);
+
+    header("Location: project-infos.php?id=" . $_GET['id'] . "&projet=" . $_GET['projet']);
+    // var_dump($_FILES['technologyImg']);
+}
+
+if (isset($_POST['description']) && isset($_POST['nameProjet'])) {
+
+    if ($_POST['description'] == '') {
+        $description = $projetUser['description_projet'];
+    } else {
+        $description = $_POST['description'];
+    }
+
+    if ($_POST['nameProjet'] == '') {
+        $name = $projetUser['nom_projet'];
+    } else {
+        $name = $_POST['nameProjet'];
+    }
+
+    execute(
+        "UPDATE projet SET description_projet = :description_projet, nom_projet = :nom_projet WHERE  id_projet = :id",
+        array(
+            "description_projet" => $description,
+            "nom_projet" => $name,
+            "id" => $_GET['projet']
+        )
+    );
+
+    header("Location: project-infos.php?id=" . $_GET['id'] . "&projet=" . $_GET['projet']);
+}
+
+
+if (isset($_FILES['screenShot'])) {
+
+    $folder =  __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "upload" . DIRECTORY_SEPARATOR . $_GET['id'] . DIRECTORY_SEPARATOR . "projet" . DIRECTORY_SEPARATOR . $_GET['projet'];
+
+    try {
+        uploadMultipleFile($_FILES["screenShot"]['tmp_name'][0], $folder, 1);
+        uploadMultipleFile($_FILES["screenShot"]['tmp_name'][1], $folder, 2);
+        uploadMultipleFile($_FILES["screenShot"]['tmp_name'][2], $folder, 3);
+        uploadMultipleFile($_FILES["screenShot"]['tmp_name'][3], $folder, 4);
+        uploadMultipleFile($_FILES["screenShot"]['tmp_name'][4], $folder, 5);
+        uploadMultipleFile($_FILES["screenShot"]['tmp_name'][5], $folder, 6);
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+
+
+
+    header("Location: project-infos.php?id=" . $_GET['id'] . "&projet=" . $_GET['projet']);
+    // var_dump($_FILES['technologyImg']);
 }

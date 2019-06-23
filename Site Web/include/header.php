@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="assets/css/modifyMenu.css">
         <script src="assets/js/about.js" async></script>
         <script src="assets/js/modifyMenu.js" async></script>
+        <script src="assets/js/modifyAbout.js" async></script>
+
         <title>A Propos</title>
     <?php elseif ($_SERVER["SCRIPT_NAME"] === "/projet-web/site web/choice.php") : ?>
         <link rel="stylesheet" href="assets/css/choice.css">
@@ -32,6 +34,9 @@
     <?php elseif ($_SERVER["SCRIPT_NAME"] === "/projet-web/site web/project-infos.php") : ?>
         <link rel="stylesheet" href="assets/css/navbar.css">
         <link rel="stylesheet" href="assets/css/project-infos.css">
+        <link rel="stylesheet" href="assets/css/modifyMenu.css">
+        <script src="assets/js/modifyMenu.js" async></script>
+        <script src="assets/js/modifyProjetInfo.js" async></script>
         <title>Information Du Projet</title>
     <?php elseif ($_SERVER["SCRIPT_NAME"] === "/projet-web/site web/comingsoon.php") : ?>
         <link rel="stylesheet" href="assets/css/navbar.css">
